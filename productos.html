@@ -2,18 +2,27 @@
 <html lang="en">
 
 <head>
+    <!-- Configuración de la codificación y la vista para dispositivos móviles -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Título de la página, que aparecerá en la pestaña del navegador -->
     <title>Fitness - Max</title>
+
+    <!-- Enlace al archivo CSS para aplicar estilos a la página -->
     <link rel="stylesheet" href="src/Css/index.css">
 </head>
 
 <body>
+    <!-- Cabecera de la página, donde se encuentra el logo y la barra de navegación -->
     <header>
         <div class="space">
+            <!-- Logo de la empresa, representado por una imagen -->
             <div class="logo">
                 <img src="src/img/logo.png" alt="logo">
             </div>
+
+            <!-- Menú de navegación con enlaces hacia diferentes secciones -->
             <ul>
                 <li><a href="#">Productos</a></li>
                 <li><a href="#">Servicios</a></li>
@@ -22,38 +31,50 @@
                 <li><img src="src/img/shopping-cart (3).svg" alt=""></li>
             </ul>
         </div>
+
+        <!-- Sección de etiquetas relacionadas con los productos -->
+        <h3>Etiquetas</h3>
+        <nav>
+            <ul>
+                <!-- Enlaces a diferentes categorías de productos -->
+                <li><a href="">Proteína</a></li>
+                <li><a href="">Creatina</a></li>
+                <li><a href="">Aminoácidos</a></li>
+                <li><a href="">Pre-entrenos</a></li>
+                <li><a href="">Glutamina</a></li>
+                <li><a href="">Beta-alanina</a></li>
+                <li><a href="">Caseína</a></li>
+                <li><a href="">Omega 3</a></li>
+                <li><a href="">Multivitaminicos</a></li>
+                <li><a href="">L-carnitina</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Barra lateral de filtros para categorías de productos -->
+    <aside>
         <div class="filtro">
             <h3>Categorias</h3>
             <nav>
                 <ul>
-                    <li><a href="">suplemetnos</a></li>
+                    <!-- Filtros de categorías para productos -->
+                    <li><a href="">Suplementos</a></li>
                     <li><a href="">Snacks</a></li>
                     <li><a href="">Ropa</a></li>
                     <li><a href="">Accesorios</a></li>
                     <li><a href="">Toallas</a></li>
                 </ul>
             </nav>
-
-            <h3>Etiquetas</h3>
-            <nav>
-                <ul>
-                    <li><a href="">Proteína</a></li>
-                    <li><a href="">Creatina</a></li>
-                    <li><a href="">Aminoácidos</a></li>
-                    <li><a href="">Pre-entrenos</a></li>
-                    <li><a href="">Glutamina</a></li>
-                    <li><a href="">Beta-alanina</a></li>
-                    <li><a href="">Caseína</a></li>
-                    <li><a href="">Omega 3</a></li>
-                    <li><a href="">Multivitaminicos</a></li>
-                    <li><a href="">L-carnitina</a></li>
-                </ul>
-            </nav>
         </div>
-    </header>
+    </aside>
+
+    <!-- Cuerpo principal de la página, donde se muestran los productos destacados -->
     <main>
         <h2>PRODUCTOS DESTACADOS</h2>
+        
+        <!-- Contenedor de productos destacados -->
         <div class="productos">
+            <!-- Cada producto tiene su imagen, nombre, precio y un botón para agregar al carrito -->
             <div class="producto">
                 <img src="src/img/imagen.png" alt="">
                 <h3>Nombre Producto</h3>
@@ -61,13 +82,8 @@
                 <p>RD$ 1,000</p>
                 <button>Agregar al carrito</button>
             </div>
-            <div class="producto">
-                <img src="src/img/imagen.png" alt="">
-                <h3>Nombre Producto</h3>
-                <h4>precio</h4>
-                <p>RD$ 1,000</p>
-                <button>Agregar al carrito</button>
-            </div>
+            
+            <!-- Repetición de la estructura del producto para más productos -->
             <div class="producto">
                 <img src="src/img/imagen.png" alt="">
                 <h3>Nombre Producto</h3>
@@ -125,7 +141,10 @@
                 <button>Agregar al carrito</button>
             </div>
         </div>
+
+        <!-- Paginación de productos -->
         <div class="list">
+            <!-- Enlaces para navegar entre páginas de productos -->
             <a href="">1</a>
             <a href="">2</a>
             <a href="">3</a>
