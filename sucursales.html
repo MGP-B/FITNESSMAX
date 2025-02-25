@@ -2,98 +2,121 @@
 <html lang="en">
 
 <head>
+    <!-- Definición de la codificación de caracteres y la vista para dispositivos móviles -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cilentes</title>
+    
+    <!-- Título de la página que aparecerá en la pestaña del navegador -->
+    <title>Sucursales</title>
 </head>
 
 <body>
+    <!-- Cabecera de la página que contiene el logo y el menú de navegación -->
     <header>
         <div class="space">
+            <!-- Sección del logo, que incluye una imagen -->
             <div class="logo">
                 <img src="src/img/logo.png" alt="logo">
             </div>
+
+            <!-- Menú de navegación con enlaces a distintas secciones -->
             <ul>
                 <li><a href="#">Clientes</a></li>
                 <li><a href="#">Inventario</a></li>
                 <li><a href="#">Entrenador</a></li>
-                <li><a href="#">Sucurales</a></li>
+                <li><a href="#">Sucursales</a></li>
+                <!-- Icono de usuario, posiblemente un enlace a un perfil de usuario -->
                 <img src="src/img/circle-user.svg" alt="">
+            </ul>
         </div>
     </header>
+
+    <!-- Cuerpo principal de la página -->
     <main>
+        <!-- Sección de búsqueda y botones de acción -->
         <div class="head">
             <div class="left">
+                <!-- Campo de búsqueda con un ícono y un botón -->
                 <div>
                     <img src="src/img/search (3).svg" alt="">
                     <input type="text">
                 </div>
-                <button>Buscar Sucural</button>
+                <button>Buscar Sucursal</button>
             </div>
+            
             <div class="right">
+                <!-- Botón para agregar una nueva sucursal -->
                 <button><img src="src/img/layers.svg" alt="">Agregar Sucursal</button>
             </div>
         </div>
+
+        <!-- Contenedor de productos o sucursales -->
         <div class="productos">
             <div class="productos">
-
+                <!-- Imagen del producto o sucursal -->
                 <head>
                     <img src="src/img/imagen.png" alt="">
                 </head>
+
+                <!-- Información general de la sucursal o producto -->
                 <div class="info-general">
                     <div>
+                        <!-- Nombre de la sucursal/producto y su dirección -->
                         <h3>Nombre Producto</h3>
                         <img src="src/img/map-pin (2).svg" alt="">
                         <p>Calle Principal 123, Ciudad</p>
                     </div>
                     <div>
+                        <!-- Icono relacionado con más detalles, probablemente un enlace para ver más información -->
                         <img src="src/img/list (1) 1.svg" alt="">
                     </div>
-                    
                 </div>
-                
+
+                <!-- Sección de datos de la sucursal/producto -->
                 <div class="datos">
                     <div>
+                        <!-- Icono de usuarios y la cantidad de miembros -->
                         <img src="src/img/users (2).svg" alt="">
                         <h4>Miembros</h4>
                         <h3>?</h3>
                     </div>
                     <div>
+                        <!-- Icono de dinero y el precio de la sucursal/producto -->
                         <img src="src/img/dollar-sign.svg" alt="">
                         <h4>Precio</h4>
                         <h3>RD$ ?</h3>
                     </div>
                 </div>
             </div>
+
+            <!-- Detalles adicionales de la sucursal -->
             <div class="objetivos">
                 <h3>Detalles:</h3>
                 <div class="pie">
                     <div class="datos">
-                            
+                        <!-- Detalles adicionales, como teléfono, puntuación y horarios -->
                         <div class="dato">
                             <img src="src/img/phone (1).svg" alt="">
                             <h4>+1 809-322-0983</h4>
                         </div>
-                        
+
                         <div class="dato">
                             <img src="src/img/star (1).svg" alt="">
                             <h4>Puntuación: 4.5 / 5</h4>
-
                         </div>
 
                         <div class="dato">
                             <img src="src/img/timer.svg" alt="">
                             <h4>Lun-Vie: 5am-11pm, Sab-Dom: 7am-9pm</h4>
-                        
                         </div>
 
                         <div class="dato">
                             <img src="src/img/square-user (1).svg" alt="">
                             <h4>Responsable: Carlos Rodríguez</h4>
-                        
                         </div>
                     </div>
                 </div>
+            </div>
         </div>
     </main>
 </body>
