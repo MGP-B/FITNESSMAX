@@ -12,24 +12,23 @@
     <!-- Contenedor del menú superior -->
     <header>
         <div class="menu">
-            <!-- Logo de la empresa -->
+            <!-- Contenedor para organizar el logo y el menú de navegación -->
             <div class="logo">
-                <img src="src/img/logo.png" alt="Logo">
+                <img src="src/img/logo.png" alt="logo">
             </div>
-            
-            <!-- Navegación principal -->
-            <ul>
-                <li><a href="#">Clientes</a></li>
-                <li><a href="#">Inventario</a></li>
-                <li><a href="#">Entrenador</a></li>
-                <li><a href="#">Sucursales</a></li>
-            </ul>
-            
-            <!-- Ícono del usuario -->
-            <img src="src/img/circle-user.svg" alt="Usuario">
+            <nav id="opcionesMenu">
+                <ul>
+                    <!-- Menú Principal con enlaces a otras secciones -->
+                    <li><a href="clientes.html">Clientes</a></li>
+                    <li><a href="inventario.html">Inventario</a></li>
+                    <li><a href="entrenador.html">Entrenador</a></li>
+                    <li><a href="sucursales.html">Sucursales</a></li>
+                    <!-- Icono de usuario -->
+                    <img src="src/img/circle-user.svg" alt="Usuario">
+                </ul>
+            </nav>
         </div>
     </header>
-
     <main>
         <!-- Contenedor del encabezado de la página -->
         <div class="head">
@@ -52,11 +51,11 @@
         <section class="clientes">
             <!-- Tarjeta individual de un cliente -->
             <div class="cliente">
-                <h5>FitnesPro</h5>
+                <h5>FitnessPro</h5>
                 <img src="src/img/list.svg" alt="Lista">
                 
-                <!-- Información general del cliente -->
-                <div class="info-general">
+                <!-- Información de contacto del cliente -->
+                <div class="info-contacto">
                     <img src="src/img/mail.svg" alt="Correo">
                     <p>juan@example.com</p>
                     <img src="src/img/phone.svg" alt="Teléfono">
@@ -82,7 +81,7 @@
                     <h5>Progreso General</h5>
                     <h5>75%</h5>
                 </div>
-                <progress id="progress" value="50" max="75"></progress>
+                <progress id="progreso" value="50" max="75"></progress>
             </div>
             
             <!-- Sección de objetivos del cliente -->
