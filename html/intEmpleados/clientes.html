@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Página para gestionar Clientes -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clientes</title>
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <!-- Contenedor para organizar el logo y el menú de navegación -->
+            <div class="logo">
+                <img src="src/img/logo.png" alt="logo">
+            </div>
+            <nav id="opcionesMenu">
+                <ul>
+                    <!-- Menú Principal con enlaces a otras secciones -->
+                    <li><a href="clientes.html">Clientes</a></li>
+                    <li><a href="inventario.html">Inventario</a></li>
+                    <li><a href="entrenador.html">Entrenador</a></li>
+                    <li><a href="sucursales.html">Sucursales</a></li>
+                    <!-- Icono de usuario -->
+                    <img src="src/img/circle-user.svg" alt="Usuario">
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="head">
+            <!-- Contenedor de la cabecera principal -->
+            <div class="left">
+                <!-- Sección izquierda con barra de búsqueda -->
+                <div class="search-bar">
+                    <img src="src/img/search (3).svg" alt="Buscar">
+                    <input type="text" placeholder="Buscar cliente">
+                </div>
+                <button>Buscar cliente</button>
+            </div>
+            <div class="right">
+                <!-- Sección derecha con botón para agregar un cliente -->
+                <button><img src="src/img/user-plus.svg" alt="Agregar">Agregar Cliente</button>
+            </div>
+        </div>
+        <div class="clientes">
+            <!-- Contenedor principal donde se listarán los clientes -->
+            <div class="cliente">
+                <!-- Tarjeta individual de un cliente -->
+                <div class="head-cliente">
+                    <!-- Cabecera con el nombre del cliente y un icono de opciones -->
+                    <h5>FitnessPro</h5>
+                    <img src="src/img/list (1) 1.svg" alt="Opciones">
+                </div>
+                <div class="info-contacto">
+                    <!-- Información de contacto del cliente -->
+                    <img src="src/img/mail.svg" alt="Correo">
+                    <p>juan@example.com</p>
+                    <img src="src/img/phone (1).svg" alt="Teléfono">
+                    <p>809-432-8764</p>
+                </div>
+                <div class="datos">
+                    <!-- Sección con estadísticas del cliente -->
+                    <div>
+                        <img src="src/img/activity.svg" alt="Asistencia">
+                        <h4>Asistencia</h4>
+                        <h3>?</h3>
+                    </div>
+                    <div>
+                        <img src="src/img/timer.svg" alt="Progreso">
+                        <h4>Progreso</h4>
+                        <h3>?</h3>
+                    </div>
+                </div>
+                <div class="datos-progreso">
+                    <!-- Barra de progreso del cliente -->
+                    <h5>Progreso General</h5>
+                    <h5>75%</h5>
+                </div>
+                <progress id="progreso" value="50" max="75"></progress>
+            </div>
+        </div>
+        <div class="objetivos">
+            <!-- Sección para mostrar los objetivos del cliente -->
+            <h3>Objetivos:</h3>
+            <div class="row">
+                <div class="objetivo">
+                    <img src="src/img/circle 1.svg" alt="Objetivo">Pérdida de peso
+                </div>
+                <div class="objetivo">
+                    <img src="src/img/circle 1.svg" alt="Objetivo">Tonificación
+                </div>
+            </div>
+            <div class="pie">
+                <!-- Información adicional sobre la actividad del cliente -->
+                <div class="datos">
+                    <div class="imagen">
+                        <img src="src/img/calendar.svg" alt="Calendario">
+                    </div>
+                    <div class="dato">
+                        <h4>Última visita:</h4>
+                        <p>11/2/2024</p>
+                    </div>
+                </div>
+                <div class="dato">
+                    <div class="imagen">
+                        <img src="src/img/trophy.svg" alt="Trofeo">
+                    </div>
+                    <div class="datos">
+                        <h4>Miembro desde:</h4>
+                        <p>19/6/2023</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
