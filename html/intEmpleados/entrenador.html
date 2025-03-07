@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empleados</title>
+    <link rel="stylesheet" href="../../src/css/empleado/entrenador.css">
+</head>
+
+<body>
+    <!-- Contenedor del menú superior -->
+    <header>
+        <div class="menu">
+            <!-- Contenedor para organizar el logo y el menú de navegación -->
+            <div class="logo">
+                <img src="../../src/img/logo.png" alt="logo">
+            </div>
+            <nav id="opcionesMenu">
+                <ul>
+                    <!-- Menú Principal con enlaces a otras secciones -->
+                    <li><a href="clientes.html">Clientes</a></li>
+                    <li><a href="inventario.html">Inventario</a></li>
+                    <li><a href="entrenador.html">Entrenador</a></li>
+                    <li><a href="sucursales.html">Sucursales</a></li>
+                    <!-- Icono de usuario -->
+                    <img src="../../src/img/circle-user.svg" alt="Usuario">
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="search-container">
+            <div class="search-left">
+                <div class="search-bar">
+                    <img src="../../src/img/search (3).svg" alt="Buscar">
+                    <input type="text" placeholder="Buscar">
+                </div>
+                <button class="search-button">Buscar</button>
+            </div>
+            <div class="right">
+               <button class="add-button"><img src="../../src/img/square-user (1).svg
+                " alt="Agregar"> Agregar Cliente</button>
+            </div>
+        </div>
+
+        <!-- Sección que contiene la lista de clientes -->
+        <section class="clientes">
+            <!-- Tarjeta individual de un cliente -->
+            <div class="cliente">
+                <h5>FitnessPro</h5>
+                <img src="../../src/img/list (1) 1.svg" alt="Lista">
+                
+                <!-- Información de contacto del cliente -->
+                <div class="info-contacto">
+                    <img src="../../src/img/mail.svg" alt="Correo">
+                    <p>juan@example.com</p>
+                    <img src="../../src/img/phone (1).svg" alt="Teléfono">
+                    <p>809-432-8764</p>
+                </div>
+                
+                <!-- Sección con estadísticas del cliente -->
+                <div class="datos">
+                    <div>
+                        <img src="../../src/img/activity.svg" alt="Asistencia">
+                        <h4>Asistencia</h4>
+                        <h3>?</h3>
+                    </div>
+                    <div>
+                        <img src="../../src/img/timer.svg" alt="Progreso">
+                        <h4>Progreso</h4>
+                        <h3>?</h3>
+                    </div>
+                </div>
+                
+                <!-- Progreso general del cliente -->
+                <div class="datos-progreso">
+                    <h5>Progreso General</h5>
+                    <h5>75%</h5>
+                </div>
+                <progress id="progreso" value="50" max="75"></progress>
+            </div>
+            
+            <!-- Sección de objetivos del cliente -->
+            <div class="objetivos">
+                <h3>Objetivos:</h3>
+                <div class="row">
+                    <div class="objetivo">
+                        <img src="../../src/img/circle.svg" alt=""> Pérdida de peso
+                    </div>
+                    <div class="objetivo">
+                        <img src="../../src/img/circle.svg" alt=""> Tonificación
+                    </div>
+                </div>
+                
+                <!-- Pie de la tarjeta con información adicional -->
+                <div class="pie">
+                    <div class="datos">
+                        <div class="imagen">
+                            <img src="../../src/img/calendar.svg" alt="Última visita">
+                        </div>
+                        <div class="dato">
+                            <h4>Última visita:</h4>
+                            <p>11/02/2024</p>
+                        </div>
+                    </div>
+                    <div class="datos">
+                        <div class="imagen">
+                            <img src="../../src/img/trophy.svg" alt="Miembro desde">
+                        </div>
+                        <div class="dato">
+                            <h4>Miembro desde:</h4>
+                            <p>19/06/2023</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
