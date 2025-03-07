@@ -19,7 +19,7 @@ body {
 
 /* Contenedor principal con ancho máximo y centrado */
 .contenedor {
-    max-width: 1200px;
+    max-width: 900px;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -28,7 +28,6 @@ body {
 header {
     background-color: #2B2D2F;
     padding: 1rem;
-    position: sticky;
     top: 0;
 }
 
@@ -37,7 +36,7 @@ header {
     align-items: center;
     display: flex;
     justify-content: space-between;
-    max-width: 1150px;
+    max-width: 860px;
     margin: 0 auto;
 }
 
@@ -129,15 +128,16 @@ header {
 .producto {
     background: #fff;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 10px rgba(136, 136, 136, 0.5);
     padding: 1rem;
-    width: 300px;
-
+    width: 250px;
+    line-height: 5px;
 }
 
 .producto img {
     border-radius: 8px;
-    margin-bottom: 1rem;
+    margin-bottom: 40px;
+    translate: -3px;
 
 }
 
@@ -250,15 +250,15 @@ header {
 
 .beneficios button {
     background-color: transparent;
-    border: 2px solid #FFA500;
-    border-radius: 4px;
-    color: #FFA500;
+    border: none;
+    border-bottom: 2px solid #000000;
+    color: #000000;
     cursor: pointer;
-    padding: 0.5rem 1rem;
-    transition: all 0.3s ease;
+    font-size: 18px;
 }
 
 .beneficios button:hover {
-    background-color: #FFA500;
-    color: white;
+    border-bottom: 2px solid #ffa600;
+        color: #ffa600;
 }
+
