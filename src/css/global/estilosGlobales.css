@@ -17,11 +17,25 @@ body {
     background-color: #fff;
 }
 
+body::-webkit-scrollbar {
+    background: transparent;
+    width: 5px;
+}
+
+body::-webkit-scrollbar-thumb {
+    height: 80px;
+    background-color: #FFA500;
+    border-radius: 10px;
+}
+
 /* Contenedor principal con ancho máximo y centrado */
 .contenedor {
     max-width: 900px;
     margin: 0 auto;
     padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 /* Estilos del header y navegación */
@@ -106,8 +120,11 @@ header {
 .seccion-productos {
     margin: 3rem 0;
     text-align: center;
+    width: 100%;
 }
 .center{
+    flex-wrap: wrap;
+    display: flex;
     margin: auto;
     display: flex;
     gap: 2rem;
