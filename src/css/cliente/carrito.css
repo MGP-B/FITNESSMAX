@@ -1,0 +1,42 @@
+@import '../global/estilosGlobales.css';
+
+main h1 {
+    font-size: 40px;
+    margin: 50px;
+    text-align: center;
+}
+
+.listaProductos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.itemProducto {
+    width: 100%;
+    background-color: red;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#imgProducto img{
+    width: 200px;
+    padding: 20px;
+}
+
+.datosProducto {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+}
+
+.datosProducto h2 {
+    margin-top: 55px;
+    margin-right: 200px;
+}
+
+.listaProductos p {
+    font-size: 20px;
+    margin-top: 60px;
+}
