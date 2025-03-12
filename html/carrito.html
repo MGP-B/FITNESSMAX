@@ -41,41 +41,45 @@
     </header>
     <div class="contenedor">
         <main>
-            <section class="productos">
-                <!-- Sección de productos agregados al carrito -->
-                <h2>Tus Productos</h2>
-                <img src="../src/img/carrito/Creatina Monohidrato Masticable Gentech Suplementos Deportivos.jpg" alt="Creatina gentech">
-                <h3>Creatina Monohidrato Masticable Gentech</h3>
-                <p>2,500 RD$</p>
-                <img src="src/img/carrito/SAN-CREATINA-MONOHYDRATADA-10.6oz-60S.jpg" alt="SAN-CREATINA-MONOHYDRATADA">
-                <h3>San Creatina Monohydratada</h3>
-                <p>2,500 RD$</p>
-                <img src="../src/img/carrito/creatine_unflavored_300g_sept202-min.png" alt="creatine_unflavored">
-                <h3>Creatine Unflavored</h3>
-                <p>2,500 RD$</p>
-                <!-- 
+            <h1>Tus productos</h1>
+
+            <section class="listaproductos">
+
+                <div class="itemProducto">
+                    <img src="../src/img/imagen.png" alt="imagen de producto en carrito">
+                    <h2>Nombre de producto</h2>
+                    <p>0,000 RD$</p>
+
                     <form action="">
-                    <input type="text">
-                </form>  -->
+                        <div class="cantidadProducto">
+                            <button id="restarCantidad">-</button>
+                            <input type="text" id="cantidad" placeholder="0" readonly>
+                            <button id="sumarCantidad">+</button>
+                        </div>
+                        <div id="eliminar">
+                            <button id="eliminarBtn"></button>
+                        </div>
+                    </form>
+
+                </div>
             </section>
         </main>
         <aside>
-            <section class="caja">
+            <div class="caja">
                 <!-- seccion de cantidad total a pagar -->
-                <p>Sub-total:</p>
-                <p>0 RD$</p>
-                <p>Envío:</p>
-                <p>0 RD$</p>
-                <p>Total:</p>
-                <p>0 RD$</p>
+                <h3>SUB-TOTAL:</h3>
+                <p>0,000 RD$</p>
+                <h3>ENVÍO:</h3>
+                <p>000 RD$</p>
+                <h3>TOTAL:</h3>
                 <form action="">
                     <input id="comprar" type="button" value="comprar">
                 </form>
-            </section>
-            <section class="pagar">
+            </div>
+            <div class="pagar">
                 <!-- Seccion de metodos de pago -->
-                <p>Pagar con:</p>
-            </section>
+                <p>Paga con:</p>
+            </div>
         </aside>
     </div>
 </body>
