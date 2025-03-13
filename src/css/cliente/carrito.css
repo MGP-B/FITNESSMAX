@@ -10,19 +10,23 @@ main h1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 100%;
+    width: 80%;
 }
 
 .itemProducto {
-    width: 100%;
-    background-color: red;
+    border-bottom: 1px solid rgba(0, 0, 0, .4);
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
+}
+
+.itemProducto:last-child {
+    border-bottom: none;
 }
 
 #imgProducto img{
-    width: 200px;
     padding: 20px;
+    width: 200px;
 }
 
 .datosProducto {
@@ -32,11 +36,73 @@ main h1 {
 }
 
 .datosProducto h2 {
-    margin-top: 55px;
-    margin-right: 200px;
+    margin-top: 60px;
+    margin-right: 120px;
 }
 
 .listaProductos p {
     font-size: 20px;
-    margin-top: 60px;
+    margin-top: 65px;
+}
+
+form {
+    display: inline-flex;
+    translate: 0 -40px;
+}
+
+.cantidadProducto {
+    align-items: center;
+    align-content: center;
+    background-color: #d9d9d9;
+    border: none;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    height: 30px;
+    width: 180px;
+}
+
+.cantidadProducto button{
+    border: none;
+    border-radius: 50%;
+    background-color: black;
+    color: white;   
+    cursor: pointer;
+    font-size: 20px;
+    margin: 0 10px;
+    min-height: 25px;
+    min-width: 25px; 
+}
+
+.cantidadProducto input {
+    width: 90px;
+    height: 20px;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    background-color: #939393;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+    padding-left: 12px;
+    outline: none;
+    cursor: default ;
+}
+
+#eliminar {
+    margin-left: 180px;
+}
+
+#eliminar button img {
+    width: 20px;
+    height: 20px;
+}
+
+#eliminar button {
+    width: 85px;
+    height: 30px;
+    border-radius: 20px;
+    border: none;
+    background-color: #ff4640;
+    cursor: pointer;
 }
