@@ -1,4 +1,4 @@
-@import url(../global/estilosGlobales.css);
+@import url(../../css/global/estilosGlobales.css);
 
 .banner {
     display: flex;
@@ -7,10 +7,11 @@
     width: 100%; 
     height: 170px;
     margin: 25px auto;
+    margin-top: -5px;
 }
 
 .banner img {
-    height: 95%;
+    height: 80%;
     width: 100%;
 }
 
@@ -22,6 +23,7 @@
     height: 90%;
     width: 100%;
     margin: 0 auto;
+    margin-top: -5px;
     padding: 20px;
 }
 
@@ -34,6 +36,8 @@
     max-width: 300px; 
     min-width: 200px;
     margin-right: 20px;
+    margin-top: -50px;
+    transform: scale(0.9,0.9);
 }
 
 .perfil-container .icon-perfil2 {
@@ -81,7 +85,7 @@
 }
 
 .perfil-container .perfil-opciones ul li {
-    line-height: 4;
+    line-height: 3.5;
 }
 
 .perfil-container .perfil-opciones ul li a {
@@ -96,8 +100,7 @@
     color: #FFA500;
 }
 
-.historial-pagos {
-    /* border: 1px solid black; */
+.perfil-entrenador {
     flex: 1;
     max-height: 400px;
     max-width: 900px;
@@ -107,32 +110,4 @@
     margin-top: -50px;
     overflow: auto;
     transform: scale(0.9,0.9);
-}
-
-.historial-pagos table {
-    /* border: 1px solid #d9d9d9; */
-    margin-top: 20px;
-    width: 95%;
-}
-
-.historial-pagos .categorias {
-    font-size: 20px;
-    text-align: center;
-}
-
-.historial-pagos .pagos {
-    /* border: 6px solid #d9d9d9; */
-    line-height: 2;
-}
-
-.historial-pagos .pagos td {
-    /* border: 1px solid #d9d9d9; */
-    font-weight: 500;
-    font-size: 15px;
-    text-align: center;
-    padding: 10px;
-}
-
-.historial-pagos .pagos td span {
-    color: #FFA500;
 }
