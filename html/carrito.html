@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <title>Carrito</title>
-    <link rel="icon" type="image/x-icon" href="src/img/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../src/img/fitnessmax-favicon.png">
+    <link rel="stylesheet" href="../src/css/cliente/carrito.css">
 </head>
 <body>
     <header>
@@ -13,7 +14,7 @@
         <div class="menu">
             <!-- Logo de la página -->
             <div class="logo">
-                <a href="index.html">
+                <a href="../index.html">
                     <img src="../src/img/logo.png" alt="logo">
                 </a>
             </div>
@@ -23,8 +24,8 @@
                 <li><a href="servicios.html">Servicios</a></li>
                 <li><img src="../src/img/search (3).svg" alt="Ícono de búsqueda"></li>
                 <li>
-                    <a href="/html/cuentas/inicioSesion.html">
-                        <img src="src/img/circle-user.svg" alt="Icono de usuario">
+                    <a href="perfil/perfil-usuario.html">
+                        <img src="../src/img/circle-user.svg" alt="Icono de usuario">
                     </a>
                 </li>
                 <li>
@@ -33,48 +34,99 @@
                     </a>
                 </li>
                 <li>
-                    <img src="../../src/img/list (1) 1.svg" alt="Ícono de menú desplegable">
+                    <img src="../src/img/list (1) 1.svg" alt="Ícono de menú desplegable">
                 </li>
             </ul>
         </div>
     </header>
     <div class="contenedor">
         <main>
-            <section class="productos">
-                <!-- Sección de productos agregados al carrito -->
-                <h2>Tus Productos</h2>
-                <img src="../src/img/carrito/Creatina Monohidrato Masticable Gentech Suplementos Deportivos.jpg" alt="Creatina gentech">
-                <h3>Creatina Monohidrato Masticable Gentech</h3>
-                <p>2,500 RD$</p>
-                <img src="src/img/carrito/SAN-CREATINA-MONOHYDRATADA-10.6oz-60S.jpg" alt="SAN-CREATINA-MONOHYDRATADA">
-                <h3>San Creatina Monohydratada</h3>
-                <p>2,500 RD$</p>
-                <img src="../src/img/carrito/creatine_unflavored_300g_sept202-min.png" alt="creatine_unflavored">
-                <h3>Creatine Unflavored</h3>
-                <p>2,500 RD$</p>
-                <!-- 
-                    <form action="">
-                    <input type="text">
-                </form>  -->
+            <h1>Tus productos</h1>
+
+            <section class="listaProductos">
+                <div class="itemProducto">
+                    <div id="imgProducto">
+                        <img src="../src/img/imagen.png" alt="imagen de producto en carrito">
+                    </div>
+
+                    <div class="datosProducto">
+                        <h2>Nombre de producto</h2>
+                        <p>0,000 RD$</p>
+
+                        <form action="">
+                            <div class="cantidadProducto">
+                                <button id="restarCantidad">-</button>
+                                <input type="number" id="cantidad" value="1" readonly>
+                                <button id="sumarCantidad">+</button>
+                            </div>
+
+                            <div id="eliminar">
+                                <button id="eliminarBtn"><img src="../src/img/papelera.png" alt=""></button>
+                            </div>
+                        </form> 
+                    </div>
+                </div>
+                <div class="itemProducto">
+                
+                    <div id="imgProducto">
+                        <img src="../src/img/imagen.png" alt="imagen de producto en carrito">
+                    </div>
+                
+                    <div class="datosProducto">
+                        <h2>Nombre de producto</h2>
+                        <p>0,000 RD$</p>
+                
+                        <form action="">
+                            <div class="cantidadProducto">
+                                <button id="restarCantidad">-</button>
+                                <input type="number" id="cantidad" value="1" readonly>
+                                <button id="sumarCantidad">+</button>
+                            </div>
+                            <div id="eliminar">
+                                <button id="eliminarBtn"><img src="../src/img/papelera.png" alt=""></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="itemProducto">
+                    <div id="imgProducto">
+                        <img src="../src/img/imagen.png" alt="imagen de producto en carrito">
+                    </div>
+                
+                    <div class="datosProducto">
+                        <h2>Nombre de producto</h2>
+                        <p>0,000 RD$</p>
+                
+                        <form action="">
+                            <div class="cantidadProducto">
+                                <button id="restarCantidad">-</button>
+                                <input type="number" id="cantidad" value="1" readonly>
+                                <button id="sumarCantidad">+</button>
+                            </div>
+                            <div id="eliminar">
+                                <button id="eliminarBtn"><img src="../src/img/papelera.png" alt=""></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </section>
         </main>
         <aside>
-            <section class="caja">
-                <!-- seccion de cantidad total a pagar -->
-                <p>Sub-total:</p>
-                <p>0 RD$</p>
-                <p>Envío:</p>
-                <p>0 RD$</p>
-                <p>Total:</p>
-                <p>0 RD$</p>
+            <div class="caja">
+                <!-- sección de cantidad total a pagar -->
+                <h3>SUB-TOTAL:</h3>
+                <p>0,000 RD$</p>
+                <h3>ENVÍO:</h3>
+                <p>000 RD$</p>
+                <h3>TOTAL:</h3>
                 <form action="">
                     <input id="comprar" type="button" value="comprar">
                 </form>
-            </section>
-            <section class="pagar">
-                <!-- Seccion de metodos de pago -->
-                <p>Pagar con:</p>
-            </section>
+            </div>
+            <div class="pagar">
+                <!-- Sección de métodos de pago -->
+                <p>Paga con:</p>
+            </div>
         </aside>
     </div>
 </body>
