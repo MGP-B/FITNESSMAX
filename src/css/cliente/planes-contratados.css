@@ -1,5 +1,4 @@
-@import url(../global/estilosGlobales.css);
-
+@import url(../../css/global/estilosGlobales.css);
 
 .banner {
     display: flex;

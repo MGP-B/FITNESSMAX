@@ -1,4 +1,4 @@
-@import url(../global/estilosGlobales.css);
+@import url(../../css/global/estilosGlobales.css);
 
 .banner {
     display: flex;
@@ -7,10 +7,11 @@
     width: 100%; 
     height: 170px;
     margin: 25px auto;
+    margin-top: -5px;
 }
 
 .banner img {
-    height: 95%;
+    height: 80%;
     width: 100%;
 }
 
@@ -22,6 +23,7 @@
     height: 90%;
     width: 100%;
     margin: 0 auto;
+    margin-top: -5px;
     padding: 20px;
 }
 
@@ -34,6 +36,8 @@
     max-width: 300px; 
     min-width: 200px;
     margin-right: 20px;
+    margin-top: -50px;
+    transform: scale(0.9,0.9);
 }
 
 .perfil-container .icon-perfil2 {
@@ -81,7 +85,7 @@
 }
 
 .perfil-container .perfil-opciones ul li {
-    line-height: 4;
+    line-height: 3.5;
 }
 
 .perfil-container .perfil-opciones ul li a {
