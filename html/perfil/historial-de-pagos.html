@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="../../src/img/fitnessmax-favicon.png">
     <title>Perfil</title>
+    <link rel="stylesheet" href="../../src/css/cliente/historial-de-pagos.css">
 </head>
 
 <body>
@@ -42,60 +43,55 @@
     </header>
     <div class="contenedor">
         <!-- Banner -->
-        <div class="Banner">
-            <img src="../../src/img/banner-perfil.png" alt="banner">
+        <div class="banner">
+            <img src="../../src/img/banner-perfil.png" alt="Banner">
         </div>
-        <!-- Foto de Perfil -->
-        <div class="icon-perfil2">
-            <img src="../../src/img/icon-perfil2.png" alt="icon2">
+        <div class="perfil-contenido">
+            <div class="perfil-container">
+                <!-- Foto de Perfil -->
+                <div class="icon-perfil2">
+                    <img src="../../src/img/icon-perfil2.png" alt="icon2">
+                </div>
+                <div class="nombre-membresia">
+                    <h3>Nombre Completo</h3>
+                    <p>Membresía</p>
+                </div>
+                <!-- Opciones del Perfil -->
+                <div class="perfil-opciones">
+                    <ul>
+                        <li><a href="entrenador-asignado.html">Entrenador Asignado</a></li>
+                        <li><a href="planes-contratados.html">Planes Contratados</a></li>
+                        <li><a href="historial-de-pagos.html">Ver historial de pagos</a></li>
+                        <li><a href="modificar-perfil.html">Modificar perfil</a></li>
+                        <li><a href="#">Cerrar sesión</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Historial de Pagos -->
+            <div class="historial-pagos">    
+                <h3>Membresía</h3>
+                <h3>Fecha</h3>
+                <h3>Estado</h3>
+                <h3>Monto</h3>
+                <article class="pagos">
+                    <p>FITNESS<span>PRO</span></p>
+                    <p>30/01/25</p>
+                    <p><span>Pagado</span></p>
+                    <p>2,500 RD$</p>
+                </article>
+                <article class="pagos">
+                    <p>FITNESS<span>PRO</span></p>
+                    <p>28/02/25</p>
+                    <p><span>Atrasado</span></p>
+                    <p>2,500 RD$</p>
+                </article>
+                <article class="pagos">
+                    <p>FITNESS<span>PRO</span></p>
+                    <p>28/02/25</p>
+                    <p><span>Pendiente</span></p>
+                    <p>2,500 RD$</p>
+                </article>
         </div>
-        <div class="nombre-membresia">
-            <h3>Nombre Completo</h3>
-            <p>Membresía</p>
-        </div>
-        <!-- Opciones del Perfil -->
-        <div class="perfil-opciones">
-            <ul>
-                <li><a href="entrenador-asignado.html">Entrenador Asignado</a></li>
-                <li><a href="planes-contratados.html">Planes Contratados</a></li>
-                <li><a href="historial-de-pagos.html">Ver historial de pagos</a></li>
-                <li><a href="modificar-perfil.html">Modificar perfil</a></li>
-                <li><a href="#">Cerrar sesión</a></li>
-            </ul>
-        </div>
-        <div>
-            <h3>Tu Membresía</h3>
-            <h3>FITNESS<span>PRO</span></h3>
-        </div>
-        <!-- Historial de Pagos -->
-        <div class="historial-pagos">
-            <table>
-                <tr>
-                    <th>Membresía</th>
-                    <th>Fecha</th>
-                    <th>Estado</th>
-                    <th>Monto</th>
-                </tr>
-                <tr class="pagos">
-                    <td>FITNESS<span>PRO</span></td>
-                    <td>30/01/25</td>
-                    <td>Pagado</td>
-                    <td>2,500 RD$</td>
-                </tr>
-                <tr class="pagos">
-                    <td>FITNESS<span>PRO</span></td>
-                    <td>28/02/25</td>
-                    <td>Atrasado</td>
-                    <td>2,500 RD$</td>
-                </tr>
-                <tr class="pagos">
-                    <td>FITNESS<span>PRO</span></td>
-                    <td>28/02/25</td>
-                    <td>Pendiente</td>
-                    <td>2,500 RD$</td>
-                </tr>
-            </table>
-        </div>
-    </div>
+</div>
 </body>
 </html>

@@ -100,7 +100,7 @@
     color: #FFA500;
 }
 
-.planes-contratados {
+.modificar-perfil {
     flex: 1;
     max-height: 400px;
     max-width: 900px;
@@ -112,132 +112,63 @@
     transform: scale(0.9,0.9);
 }
 
-.planes-contratados h2 {
-    text-align: center;
-    font-size: 23px;
-    width: 35%;
-}
-
-.planes-contratados h2+h2 {
-    border-top: 1px solid black;
-}
-
-
-.planes-contratados h2 span {
-    color: #FFA500;
-}
-
-
-.beneficios {
+form {
+    background-color: #F0F0F0;
+    border: 1px solid #d9d9d9;
     border-radius: 20px;
+    padding: 25px;
+    height: 30%;
+    width: 60%;
+}
+
+form table {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
-    line-height: 1;
-    padding: 35px;
-    margin: 30px auto;
-    height: 25%;
-    width: 85%;
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    width: 100%;
 }
 
-.beneficios h3 {
-    font-weight: 600;
+form table tr th {
     font-size: 20px;
+    margin-bottom: 20px;
 }
 
-.beneficios ul {
-    padding-left: 10px;
+form table tr td img {
+    width: 200px;
 }
 
-.beneficios ul li {
-    background: url(../../img/Vector.png) no-repeat left;
-    display: block;
-    padding-left: 40px;
-    padding-top: 10px;
-    font-size: 13px;
-}
-
-.beneficios h4 {
-    line-height: 1.3;
+form table tr td label {
+    text-align: left;
     font-weight: 600;
+}
+
+form table tr td input {
+    border: none;
+    border-radius: 10px;
+    background-color: #d9d9d9;
     font-size: 15px;
+    padding: 2px;
 }
 
-.beneficios h4 span {
-    color: #0BAB02;
-}
-
-.boton-container {
+.modificar-perfil .boton-container {
     display: flex;
     justify-content: center; 
     align-items: center; 
     height: 50px; 
 }
 
-#boton-cancelar {
-    background-color: #FF4640;
-    color: #fff;
-    font-size: 17px;
-    border-radius: 15px;
-    border: none;
-    height: 45px;
-    width: 200px;
-    transition: background-color 0.3s;
-    cursor: pointer;
-}
-
-#boton-cancelar:hover {
-    background-color: #e7433e;
-}
-
-.extras {
+.modificar-perfil .boton-container #boton-guardar {
+    background-color: #FFA500;
     border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 25px;
-    margin: 30px auto;
-    height: 10%;
-    width: 80%;
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-.extras h2 {
-    font-size: 20px;
-    border-bottom: 1px solid black;
-}
-
-.extras table {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.extras table tr td {
-    font-weight: 500;
-    font-size: 15px;
-    padding: 5px;
-}
-
-.extras table tr td .boton-eliminar {
-    background-color: #FF4640;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     border: none;
-    border-radius: 15px;
-    margin-left: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 20px;
     padding: 10px;
-    height: 30px;
-    width: 80px;
-    transition: background-color 0.3s;
     cursor: pointer;
+    transition: background-color 0.3s;
 }
 
-.extras table tr td .boton-eliminar:hover {
-    background-color: #e7433e;
+.modificar-perfil .boton-container #boton-guardar:hover {
+    background-color: #e99c0c;
 }

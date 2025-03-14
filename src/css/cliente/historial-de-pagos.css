@@ -99,3 +99,15 @@
 .perfil-container .perfil-opciones ul li a:hover {
     color: #FFA500;
 }
+
+.historial-pagos {
+    /* border: 1px solid black; */
+    flex: 1;
+    max-height: 400px;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    margin-top: -50px;
+    overflow: auto;
+    transform: scale(0.9,0.9);
+}
