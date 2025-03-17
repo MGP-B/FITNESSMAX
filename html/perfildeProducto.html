@@ -7,6 +7,7 @@
     <title>Perfil de Producto</title>
     <link rel="icon" type="image/x-icon" href="../src/img/fitnessmax-favicon.png">
     <link rel="icon" type="image/x-icon" href="../src/img/favicon.ico">
+    <link rel="stylesheet" href="../src/css/cliente/perfildeProducto.css">
 </head>
 <body>
     <header>
@@ -40,42 +41,56 @@
         </div>
     </header>
     <div class="contenedor">
-        <main>
-            <section>
+            <section class="producto-principal">
                 <!-- Seccion del perfil del producto -->
-                <img src="../src/img/PerfildeProducto/Creatine-Mono-300G-Unflavored-Front-Flavor-Transparent.png" alt="">
-                <h2>CREATINE DRIVE 300GR NUTREX</h2>
-                <p>Descripcion de producto</p>
-                <p>2,500 RD$</p>
-                <form action="">
-                    <input id="Agregar" type="button" value="Agregar al Carrito">
-                </form>
+                <img src="../src/img/imagen.png" alt="">
+                <div class="producto-contenido">
+                    <h2>CREATINE DRIVE 300GR NUTREX</h2>
+                    <p class="descripcion">Descripcion de producto</p>
+                    <div class="precio-boton">
+                        <p class="precios">2,500 RD$</p>
+                        <button id="agregar">Agregar al Carrito</button>
+                    </div>
+                </div>
             </section>
-        </main>
-        <aside>
-            <section>
-                <!-- Seccion de productos similares -->
-                <h2>Similares</h2>
-                <img src="../src/img/PerfildeProducto/iso-tropic-4lbs-de-ronnie-coleman.jpg" alt="Iso Tropic Max">
-                <p>Iso Tropic Max</p>
-                <p>Precio: 2,500 RD$</p>
-                <form action="">
-                    <input id="Agrega" type="button" value="Agregar al Carrito">
-                </form>
-                <img src="../src/img/PerfildeProducto/ISO100_3lb_Van_35315_REV001_S-02.0-1.png" alt="Iso 100">
-                <p>Iso 100</p>
-                <p>Precio: 2,500 RD$</p>
-                <form action="">
-                    <input id="Agreg" type="button" value="Agregar al Carrito">
-                </form>
-                <img src="../src/img/PerfildeProducto/Muscletech.png" alt="Muscletech">
-                <p>Muscletech</p>
-                <p>Precio: 2,500 RD$</p>
-                <form action="">
-                    <input id="Agre" type="button" value="Agregar al Carrito">
-                </form>
-            </section>
-        </aside>
+        <!-- Sección de productos destacados -->
+        <div class="seccion-productos">
+            <h2>PRODUCTOS DESTACADOS</h2>
+            <div class="productos">
+                <div class="center">
+                    <!-- Producto 1 -->
+                    <div class="producto">
+                        <a href=""><img src="../src/img/imagen.png" alt="Imagen del producto"></a>
+                        <h3>Nombre Producto</h3>
+                        <div class="precio">
+                            <h4>Precio:</h4>
+                            <p>RD$ 1,000</p>
+                        </div>
+                        <button>Agregar al carrito</button>
+                    </div>
+                    <!-- Producto 2 -->
+                    <div class="producto">
+                        <a href=""><img src="../src/img/imagen.png" alt="Imagen del producto"></a>
+                        <h3>Nombre Producto</h3>
+                        <div class="precio">
+                            <h4>Precio:</h4>
+                            <p>RD$ 1,000</p>
+                        </div>
+                        <button>Agregar al carrito</button>
+                    </div>
+                    <!-- Producto 3 -->
+                    <div class="producto">
+                        <a href=""><img src="../src/img/imagen.png" alt="Imagen del producto"></a>
+                        <h3>Nombre Producto</h3>
+                        <div class="precio">
+                            <h4>Precio:</h4>
+                            <p>RD$ 1,000</p>
+                        </div>
+                        <button>Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
