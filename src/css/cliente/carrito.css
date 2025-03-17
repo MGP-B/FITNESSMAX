@@ -75,18 +75,18 @@ form {
 }
 
 .cantidadProducto input {
-    width: 90px;
-    height: 20px;
-    text-align: center;
-    border: none;
     border-radius: 10px;
     background-color: #939393;
+    border: none;
     color: black;
+    cursor: default ;
     font-weight: bold;
     font-size: 15px;
-    padding-left: 12px;
+    height: 20px;
     outline: none;
-    cursor: default ;
+    padding-left: 12px;
+    text-align: center;
+    width: 90px;
 }
 
 #eliminar {
