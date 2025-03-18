@@ -1,0 +1,71 @@
+@font-face {
+    font-family: Pytone;
+    src: url(../../fuente/Paytone_One/PaytoneOne-Regular.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #fff;
+}
+
+body::-webkit-scrollbar {
+    background: transparent;
+    width: 5px;
+}
+
+body::-webkit-scrollbar-thumb {
+    height: 80px;
+    background-color: #FFA500;
+    border-radius: 10px;
+}
+
+.contenedor {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+
+.volver-atras {
+    border: 1px solid #000;
+    height: 50px;
+    width: 50px;
+}
+
+.volver-atras img {
+    height: 100%;
+    width: 100%;
+}
+
+.membresias {
+    border: 1px solid black;
+    height: 50%;
+    width: 50%;
+}
+
+.membresias .fitness-pro,.fitness-basic {
+    background-color: #2B2D2F;
+    color: #fff;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    padding: 30px;
+}
+
