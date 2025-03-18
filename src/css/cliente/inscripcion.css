@@ -1,1 +1,6 @@
 @import '../../css/global/estilosGlobales.css';
+
+.titulo h2 {
+    padding: 80px 0 10px 20px;
+    line-height: 0;
+}
