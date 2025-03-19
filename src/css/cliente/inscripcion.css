@@ -1,6 +1,30 @@
 @import '../../css/global/estilosGlobales.css';
 
 .titulo h2 {
-    padding: 80px 0 10px 20px;
+    padding: 80px 0 10px 43px;
     line-height: 0;
+}
+
+.mensualidad {
+    padding: 20px;
+    font-weight: 400;
+}
+
+.plan {
+    box-shadow: 0 0 30px 2px #FFA500;
+    width: 100%;
+    z-index: 2;
+    position: relative;
+}
+
+table {
+    background-color: #2B2D2F;
+    box-shadow: 1px 0  10px 1px black;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+    margin: -23px auto 30px;
+    padding: 20px;
+    width: 90%;
+    z-index: 2;
 }
