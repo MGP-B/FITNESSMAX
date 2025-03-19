@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facturación - FitnessMax</title>
+    <link rel="stylesheet" href="../../src/css/empleado/global.css">
+    <link rel="stylesheet" href="../../src/css/empleado/facturacion.css">
+</head>
+<body>
+    <div class="contenedorPrincipal">
+        <aside class="barraLateral">
+            <div class="logotipo">
+                <img src="../../src/img/empleados/logo.png" alt="Logo FitnessMax">
+            </div>
+            <nav class="menuNavegacion">
+                <a href="dashboard.html" class="elementoNavegacion">
+                    <img src="../../src/img/empleados/panel-menu.svg" alt="Dashboard icon">
+                    Dashboard
+                </a>
+                <a href="clientes.html" class="elementoNavegacion">
+                    <img src="../../src/img/empleados/users-menu.svg" alt="Clientes icon">
+                    Clientes
+                </a>
+                <a href="inventario.html" class="elementoNavegacion">
+                    <img src="../../src/img/empleados/package-menu.svg" alt="Inventario icon">
+                    Inventario
+                </a>
+                <a href="sucursales.html" class="elementoNavegacion">
+                    <img src="../../src/img/empleados/building.svg" alt="Sucursales icon">
+                    Sucursales
+                </a>
+                <a href="facturacion.html" class="elementoNavegacion active">
+                    <img src="../../src/img/empleados/active/scroll-text-active.svg" alt="Facturación icon">
+                    Facturación
+                </a>
+            </nav>
+            <div class="infoUsuario">
+                <div class="avatarUsuario">J</div>
+                <div class="detallesUsuario">
+                    <h4>José Miguel</h4>
+                    <p>josemiguel@ejemplo.com</p>
+                </div>
+            </div>
+        </aside>
+
+        <div class="barraSuperior">
+            <div class="avatarUsuario">J</div>
+        </div>
+
+        <main class="contenidoPrincipal">
+            <header class="encabezadoPanel">
+                <div>
+                    <h1>Facturación</h1>
+                    <p>Gestiona tus facturas y pagos</p>
+                </div>
+            </header>
+
+            <div class="controlesFacturacion">
+                <div class="filtros">
+                    <div class="barraBusqueda">
+                        <img src="../../src/img/empleados/search.svg" alt="Search icon" class="iconoBusqueda">
+                        <input type="text" placeholder="Buscar productos...">
+                    </div>
+                    <button class="botonBuscar">Buscar</button>
+                </div>
+                <button class="botonCrearFactura">
+                    <img src="../../src/img/empleados/plus.svg" alt="Add icon">
+                    Crear Factura
+                </button>
+            </div>
+
+            <div class="tablaFacturas">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>FACTURA</th>
+                            <th>CLIENTE</th>
+                            <th>FECHA</th>
+                            <th>VENCIMIENTO</th>
+                            <th>TOTAL</th>
+                            <th>ESTADO</th>
+                            <th>MÉTODO</th>
+                            <th>ACCIÓN</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>FAC-001</td>
+                            <td>Miguel José</td>
+                            <td>22/03/2025</td>
+                            <td>22/04/2025</td>
+                            <td>RD$ 1,200.00</td>
+                            <td><span class="etiquetaEstado pagado">Pagada</span></td>
+                            <td>Tarjeta</td>
+                            <td class="botonesAccion">
+                                <button class="botonEditar"><img src="../../src/img/empleados/ellipsis-vertical.svg" alt="Edit"></button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
