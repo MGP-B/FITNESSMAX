@@ -13,18 +13,18 @@
         <a href="#" id="logo"><img src="../../src/img/fitnessmax-logo-black.png" alt="Logo"></a>
         </header>
         <!-- Membresías -->
-        <div class="membresias">
+        <form class="membresias">
             <article class="fitness-pro">
                 <h2>FITNESS<span>PRO</span></h2>
-                <p>¡Inscripción Gratis!</p>
-                <input type="checkbox">
+                <label for="opcion1">¡Inscripción Gratis!</label>
+                <input type="checkbox" id="opcion1" name="opciones" value="opcion1">
             </article>
             <article class="fitness-basic">
                 <h2>FITNESS<span>BASIC</span></h2>
-                <p>¡Inscripción Gratis!</p>
-                <input type="checkbox">
+                <label for="opcion2">¡Inscripción Gratis!</label>
+                <input type="checkbox" id="opcion2" name="opciones" value="opcion2">
             </article>
-        </div>
+        </form>
         <!-- Adicionales -->
         <div class="adicionales">
             <h2>ADICIONALES</h2>
@@ -41,17 +41,21 @@
         <div class="sucursal">
             <h2>SUCURSAL</h2>
             <div class="sucursal-info">
-                <p>Santiago Centro</p>
-                <p id="gris"><img src="../../src/img/icon-map.png" alt="Icon-map"> Calle Principal 123, Ciudad</p>
-                <p>FITNESS<span>PRO</span></p>
-                <p>1,500 RD$</p>
+                <div class="sucursal-info1">
+                    <p>Santiago Centro</p>
+                    <p id="gris"><img src="../../src/img/icon-map.png" alt="Icon-map"> Calle Principal 123, Ciudad</p>
+                </div>
+                <div class="sucursal-info2">
+                    <p>FITNESS<span>PRO</span></p>
+                    <p>1,500 RD$</p>
+                </div>
             </div>
         </div>
         <!-- Factura -->
         <div class="factura">
             <table>
                 <tr>
-                    <th>FITNESS PRO</th>
+                    <th class="center">FITNESS PRO</th>
                 </tr>
                 <tr>
                     <td>Inscripción</td>
@@ -63,7 +67,7 @@
                 <tr>
                     <td>Mensualidad</td>
                 </tr>
-                <tr>
+                <tr class="linea">
                     <td>Precio:</td>
                     <td>1,500.00 RD$</td>
                 </tr>
@@ -92,9 +96,9 @@
                     <td>500.00 RD$</td>
                 </tr>
             </table>
+            <!-- Botón de confirmación de suscripción -->
+            <button>Confirmar suscripción</button>
         </div>
-        <!-- Botón de confirmación de suscripción -->
-        <button>Confirmar suscripción</button>
     </div>
 </body>
 </html>

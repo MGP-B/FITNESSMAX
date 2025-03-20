@@ -55,8 +55,8 @@ header {
 }
 
 .membresias {
-    height: 50%;
-    width: 50%;
+    height: 55%;
+    width: 55%;
     margin-top: 50px;
 }
 
@@ -68,6 +68,7 @@ header {
     justify-content: space-between;
     margin: 10px;
     padding: 30px;
+    font-family: Pytone;
 }
 
 .membresias .fitness-pro {
@@ -78,13 +79,13 @@ header {
     color: #FFA500;
 }
 
-.membresias .fitness-basic p {
+.membresias .fitness-basic label {
     font-size: 12px;
     margin-top: 8px;
     margin-left: 40px;
 }
 
-.membresias .fitness-pro p {
+.membresias .fitness-pro label {
     font-size: 12px;
     margin-top: 8px;
     margin-left: 60px;
@@ -96,8 +97,8 @@ header {
 }
 
 .adicionales {
-    height: 50%;
-    width: 50%;
+    height: 55%;
+    width: 55%;
     padding: 5px;
     margin-top: 10px;
 }
@@ -129,10 +130,11 @@ header {
 }
 
 .sucursal {
-    height: 50%;
-    width: 50%;
+    height: 20%;
+    width: 55%;
     padding: 5px;
     margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 .sucursal h2 {
@@ -143,7 +145,21 @@ header {
     padding-left: 15px;
 }
 
+.sucursal .sucursal-info {
+    display: flex;
+    justify-content: space-between;
+}
+
 .sucursal .sucursal-info p+p {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.sucursal .sucursal-info2 {
+    margin-top: 11px;
+}
+
+.sucursal .sucursal-info2 p {
     font-size: 13px;
     font-weight: bold;
 }
@@ -162,9 +178,44 @@ header {
 }
 
 .factura {
-    display: flex;
-    justify-content: right;
-    border: 1px solid black;
-    float: right;
+    transform: translate(13cm, 3cm);
+    position: fixed;
+    width: auto;
+    padding: 20px;
+    width: 25%;
 }
 
+.factura table {
+    background-color: #F1F0F0;
+    border-radius: 20px;
+    width: 100%;
+    padding: 25px;
+}
+
+.factura table .linea {
+    border: 1px solid black;
+}
+
+.factura table tr th {
+    font-size: 20px;
+    align-items: center;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.factura button {
+    background-color: #FFA500;
+    border-radius: 10px;
+    color: #000;
+    border: none;
+    font-size: 15px;
+    padding: 10px;
+    align-items: center;
+    font-weight: 600;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.factura button:hover {
+    background-color: #e99c0c;
+}
