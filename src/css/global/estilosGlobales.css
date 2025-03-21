@@ -283,11 +283,11 @@ header {
 }
 
 /* Sección de beneficios */
-.beneficios {
+.beneficiosPRO, .beneficiosBASIC{
     margin: 1rem 0;
 }
 
-.beneficios button {
+.beneficiosPRO button, .beneficiosBASIC button {
     background-color: transparent;
     border: none;
     border-bottom: 2px solid #000000;
@@ -296,8 +296,7 @@ header {
     font-size: 18px;
 }
 
-.beneficios button:hover {
+.beneficiosPRO button:hover, .beneficiosBASIC button:hover {
     border-bottom: 2px solid #ffa600;
         color: #ffa600;
 }
-

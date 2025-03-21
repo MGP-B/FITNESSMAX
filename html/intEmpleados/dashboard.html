@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - FitnessMax</title>
+    <link rel="stylesheet" href="../../src/css/empleado/global.css">
+    <link rel="stylesheet" href="../../src/css/empleado/dashboard.css">
+</head>
+<body>
+    <div class="contenedor">
+        <aside class="barraLateral">
+            <div class="logotipo">
+                <img src="../../src/img/empleados/logo.png" alt="FitnessMax Logo">
+                <img src="../../src/img/empleados/flecha-izquierda.svg" alt="Toggle Sidebar" class="alternarBarraLateral">
+            </div>
+            <nav class="menuNavegacion">
+                <a href="dashboard.html" class="elementoNavegacion active">
+                    <img src="../../src/img/empleados/active/layout-dashboard-active.svg" alt="Dashboard icon">
+                    Dashboard
+                </a>
+                <a href="clientes.html" class="elementoNavegacion">
+                    <img src="../../src/img/empleados/users-menu.svg" alt="Clientes icon">
+                    Clientes
+                </a>
+                <a href="inventario.html" class="elementoNavegacion">
+                    <img src="../../src/img/empleados/package-menu.svg" alt="Inventario icon">
+                    Inventario
+                </a>
+                <a href="sucursales.html" class="elementoNavegacion">
+                    <img src="../../src/img/empleados/building.svg" alt="Sucursales icon">
+                    Sucursales
+                </a>
+                <a href="facturacion.html" class="elementoNavegacion">
+                    <img src="../../src/img/empleados/scroll-text-menu.svg" alt="Facturación icon">
+                    Facturación
+                </a>
+
+            </nav>
+            <div class="infoUsuario">
+                <div class="avatarUsuario">J</div>
+                <div class="detallesUsuario">
+                    <h4>José Miguel</h4>
+                    <p>josemiguel@ejemplo.com</p>
+                </div>
+            </div>
+        </aside>
+        <div class="barraSuperior">
+            <div class="avatarUsuario">J</div>
+        </div>
+        <main class="contenidoPrincipal">
+            
+            <header class="encabezadoPanel">
+                <div>
+                    <h1>Dashboard</h1>
+                    <p>Bienvenido al panel de control de FitnessMax</p>
+                </div>
+            </header>
+            <div class="cuadriculaEstadisticas">
+                <div class="tarjetaEstadistica">
+                    <div class="iconoEstadistica">
+                        <img src="../../src/img/empleados/users.svg" alt="Clientes icon">
+                    </div>
+                    <div class="infoEstadistica">
+                        <h3>Clientes Activos</h3>
+                        <p class="numeroEstadistica">245</p>
+                        <p class="cambioEstadistica">+12% respecto al mes anterior</p>
+                    </div>
+                </div>
+                <div class="tarjetaEstadistica">
+                    <div class="iconoEstadistica">
+                        <img src="../../src/img/empleados/scroll-text.svg" alt="Ventas icon">
+                    </div>
+                    <div class="infoEstadistica">
+                        <h3>Ventas Totales</h3>
+                        <p class="numeroEstadistica">$12,345</p>
+                        <p class="cambioEstadistica">+5% respecto al mes anterior</p>
+                    </div>
+                </div>
+                <div class="tarjetaEstadistica">
+                    <div class="iconoEstadistica">
+                        <img src="../../src/img/empleados/package.svg" alt="Productos icon">
+                    </div>
+                    <div class="infoEstadistica">
+                        <h3>Productos Activos</h3>
+                        <p class="numeroEstadistica">120</p>
+                        <p class="cambioEstadistica">+5 nuevos productos este mes</p>
+                    </div>
+                </div>
+                <div class="tarjetaEstadistica">
+                    <div class="iconoEstadistica">
+                        <img src="../../src/img/empleados/panel.svg" alt="Visitas icon">
+                    </div>
+                    <div class="infoEstadistica">
+                        <h3>Visitas Diarias</h3>
+                        <p class="numeroEstadistica">320</p>
+                        <p class="cambioEstadistica">+16% respecto a la semana anterior</p>
+                    </div>
+                </div>
+            </div>
+            <div class="dashboard-grid">
+                <div class="sales-chart">
+                    <h2>Ventas Mensuales</h2>
+                    <p>Gráfica de ventas en el último mes</p>
+                    <div class="chart-container">
+                        <div class="chart-bar" style="height: 60%">Ene</div>
+                        <div class="chart-bar" style="height: 45%">Feb</div>
+                        <div class="chart-bar" style="height: 75%">Mar</div>
+                        <div class="chart-bar" style="height: 65%">Abr</div>
+                        <div class="chart-bar" style="height: 85%">May</div>
+                        <div class="chart-bar" style="height: 70%">Jun</div>
+                    </div>
+                </div>
+                <div class="recent-activities">
+                    <h2>Actividades Recientes</h2>
+                    <p>Eventos programados para hoy</p>
+                    <div class="activities-list">
+
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
