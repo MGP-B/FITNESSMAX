@@ -97,6 +97,10 @@
     transition: color 0.3s;
 }
 
+.perfil-container .perfil-opciones ul li #selection {
+    color: #FFA500;
+}
+
 .perfil-container .perfil-opciones ul li a:hover {
     color: #FFA500;
 }
@@ -131,7 +135,7 @@ form table {
 
 form table tr th {
     font-size: 20px;
-    margin-bottom: 20px;
+    padding: 8px;
 }
 
 

@@ -62,7 +62,7 @@
                         <li><a href="entrenador-asignado.html">Entrenador Asignado</a></li>
                         <li><a href="planes-contratados.html">Planes Contratados</a></li>
                         <li><a href="historial-de-pagos.html">Ver historial de pagos</a></li>
-                        <li><a href="modificar-perfil.html">Modificar perfil</a></li>
+                        <li><a href="modificar-perfil.html" id="selection">Modificar perfil</a></li>
                         <li><a href="#">Cerrar sesión</a></li>
                     </ul>
                 </div>
@@ -72,7 +72,7 @@
                 <form action="formulario">
                     <table>
                         <tr>
-                            <th>Cuenta</th>
+                            <th>Modificar Perfil</th>
                         </tr>
                         <tr>
                             <td><label for="arrastrar-imagen">
@@ -98,10 +98,58 @@
                             <td><input type="number" id="edad"></td>
                         </tr>
                         <tr>
+                            <th>Cuenta</th>
+                        </tr>
+                        <tr>
                             <td><label for="correo">Correo:</label></td>
                         </tr>
                         <tr>
                             <td><input type="email" id="correo"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="telefono">Télefono:</label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="tel" id="telefono" minlength="10" maxlength="10"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="nueva-contrasena">Nueva contraseña:</label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="password" id="nueva-contrasena"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="confirmar-contrasena">Confirmar contraseña:</label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="password" id="confirmar-contrasena"></td>
+                        </tr>
+                        <tr>
+                            <th>Método de pago</th>
+                        </tr>
+                        <tr>
+                            <td><label for="titular-tarjeta">Titular de tarjeta:</label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" id="titular-tarjeta"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="numero-tarjeta">Número de tarjeta:</label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" id="numero-tarjeta"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="fecha-vencimiento">Fecha de vencimiento:</label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="date" id="fecha-vencimiento"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="codigo-seguridad">Código de seguridad:</label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" id="codigo-seguridad"></td>
                         </tr>
                     </table>
                 </form>
