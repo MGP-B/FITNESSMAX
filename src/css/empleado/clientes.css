@@ -1,195 +1,234 @@
-@import url(globalEmpleados.css);
-
-body {
-    font-family: Arial,sans-serif;
-}
-
-.clientes {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding: 20px;
-}
-
-.cliente {
-    width: 450px;
-    height: 500px;
-    border-radius: 20px;
-    border: 2px solid #FFC398;
-    padding: 15px;
-}
-
-.head-cliente {
+/* Clients page specific styles */
+.encabezadoPanel {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 24px;
 }
-
-.head-cliente h5 {
-    padding: 0 10px;
-    color: #953E00;
-    font-size: 15px;
-    font-weight: 800;
-    background-color: #FFC398;
-    margin: 0;
-    border-radius: 20px;
-}
-
-.head-cliente img {
-    width: 11px;
+.botonBuscar {
+    background-color: #F97316;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
     cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background-color 0.2s;
 }
 
-.info-contacto h3 {
-    color: black;
-    font-size: 24px;
+.botonBuscar:hover {
+    background-color: #e85a2c;
 }
 
-.info-contacto {
-    margin-top: 5px;
-}
-
-.info-contacto > div {
+.botonAgregarCliente {
     display: flex;
     align-items: center;
-    gap: 10px;
-    margin-bottom: 1px;
+    gap: 8px;
+    padding: 8px 16px;
+    background-color: #F97316;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
 }
 
-.info-contacto img {
+.botonAgregarCliente:hover {
+    background-color: #e85a2c;
+}
+
+.botonAgregarCliente img {
+    width: 22px;
+    height: 22px;
+}
+
+.filtrosClientes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.filtros {
+    display: flex;
+    gap: 12px;
+}
+
+.barraBusqueda {
+    display: flex;
+    position: relative;
+    border: none;
+    border-radius: 6px;
+    align-items: center;
+}
+
+.barraBusqueda .iconoBusqueda {
+    position: absolute;
+    left: 12px;
     width: 20px;
     height: 20px;
-    color: #8E8E8E;
+    color: #666;
 }
 
-.info-contacto img,
-.info-contacto p {
-    color: #8E8E8E;
+.barraBusqueda input {
+    padding: 8px 12px 8px 36px;
+    border: 1px solid #c7c7c7;
+    border-radius: 6px;
+    width: 300px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s;
 }
 
-.datos {
+.barraBusqueda input:focus {
+    border: 1px solid #c7c7c7;
+    border-radius: 6px;
+    width: 300px;
+    font-size: 14px;
+    overflow: hidden;
+}
+
+.grupoFiltros {
     display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-}
-
-.datos > div {
-    width: calc(50% - 5px);
-    background-color: #FFE6D4;
-    padding: 5px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
-}
-
-.datos img {
-    color: #5E5E5E;
-    width: 24px;
-    height: 24px;
-}
-
-.datos img,
-.datos h4 {
-    color: #5E5E5E;
-}
-
-.datos h3 {
-    color: black;
-}
-
-.datos-progreso {
-    margin-top: 15px;
-    display: flex;
-    justify-content: space-between;
+    gap: 12px;
     align-items: center;
 }
 
-.datos-progreso h5 {
-    font-weight: bold;
-    margin: 0;
+.filtroMembresia, .filtroEstado {
+    padding: 8px 12px;
+    border: 1px solid #c7c7c7;
+    border-radius: 4px;
+    font-size: 14px;
+    min-width: 140px;
+    appearance: none;
+    background-image: url('../img/empleados/chevron-down.svg');
+    background-repeat: no-repeat;
+    background-position: right 7px center;
+    padding-right: 30px;
+    transition: border-color 0.2s;
 }
 
-progress {
+.filtroEstado:focus{
+    outline: 0;
+    border: 1px solid #c7c7c7;
+}
+
+.filtroMembresia:focus {
+    outline: 0;
+    border: 1px solid #c7c7c7;
+}
+
+.botonFiltro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 8px 12px;
+    background-color: white;
+    border: 1px solid #c7c7c7;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s;
+}
+
+.botonFiltro img {
+    width: 17px;
+    height: 17px;
+}
+
+.botonFiltro:hover {
+    background-color: #f5f5f5;
+}
+
+.tablaClientes {
+    background-color: white;
+    border-radius: 6px;
+    border: 1px solid #c7c7c7;
+    overflow: hidden;
+    height: 76vh;
+}
+
+.tablaClientes table {
     width: 100%;
-    height: 11px;
-    margin-top: 10px;
-    background-color: #fff;
+    border-collapse: collapse;
 }
 
- 
-
-.objetivo {
-    border-radius: 20px;
-    padding: 1px 10px;
-    background-color: #DDDDDD;
-    margin-bottom: 10px;
+.tablaClientes th {
+    background-color: #FF8C3D;
+    overflow: hidden;
+    padding: 12px 16px;
+    text-align: left;
+    font-size: 14px;
+    color: #fff;
+    border-bottom: 1px solid #ddd;
+    height: 46px;
 }
 
-.objetivo h3 {
-    font-size: 22px;
+.tablaClientes td {
+    padding: 12px 16px;
+    border-bottom: 1px solid #c7c7c7;
+    font-size: 14px;
+
 }
 
-.objetivo h4 {
-    color: #898989;
+.tablaClientes tr{
+    cursor: pointer;
+}
+.tablaClientes tr:hover {
+    background-color: #ffe0d0;
 }
 
-.row {
+.etiquetaMembresia {
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.etiquetaMembresia.fitnessPlus {
+    background-color: #fff4f0;
+    color: #ff6b35;
+}
+
+.etiquetaEstado {
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.etiquetaEstado.activo {
+    background-color: #e8f5e9;
+    color: #28a745;
+}
+
+.botonesAccion {
     display: flex;
-    align-items: center;
-    gap: 10px;
+    gap: 8px;
 }
 
-.row img {
-    width: 18px;
-    height: 18px;
+.botonEditar,
+.botonEliminar {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
 }
 
-.row p {
-    font-size: 16px;
+.botonEditar:hover,
+.botonEliminar:hover {
+    background-color: #f5f5f5;
 }
 
-.pie {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 20px 30px;
-}
-
-.pie h4 {
-    color: #656565;
-}
-
-.pie p {
-    color: #858585;
-}
-
-.dato {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    
-}
-
-.objetivo {
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    margin-top: 10px;
-}
-
-.objetivos h3 {
-    color: #898989;
-    margin-top: 15px;
-}
-
-.dato-content {
-    display: flex;
-    flex-direction: column;
-}
-
-.dato img {
-    width: 24px;
-    height: 24px;
+.botonEditar img,
+.botonEliminar img {
+    width: 16px;
+    height: 16px;
 }
