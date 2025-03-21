@@ -1,131 +1,122 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inventario</title>
+    <title>Inventario - FitnessMax</title>
+    <link rel="stylesheet" href="../../src/css/empleado/global.css">
     <link rel="stylesheet" href="../../src/css/empleado/inventario.css">
 </head>
 
 <body>
-    <!-- Contenedor del menú superior -->
-    <header>
-        <div class="menu">
-            <!-- Contenedor para organizar el logo y el menú de navegación -->
-            <div class="logo">
-                <img src="../../src/img/logo.png" alt="logo">
+    <div class="contenedor">
+        <aside class="barraLateral">
+            <div class="logotipo">
+                <img src="../../src/img/empleados/logo.png" alt="FitnessMax Logo">
+                <img src="../../src/img/empleados/flecha-izquierda.svg" alt="Toggle Sidebar" class="alternarBarraLateral">
             </div>
-            <nav id="opcionesMenu">
-                <ul>
-                    <!-- Menú Principal con enlaces a otras secciones -->
-                    <li><a href="clientes.html">Clientes</a></li>
-                    <li><a href="inventario.html">Inventario</a></li>
-                    <li><a href="entrenador.html">Entrenador</a></li>
-                    <li><a href="sucursales.html">Sucursales</a></li>
-                    <!-- Icono de usuario -->
-                    <img src="../../src/img/circle-user.svg" alt="Usuario">
-                </ul>
+            <nav class="menuNavegacion">
+                <a href="dashboard.html" class="elementoNavegacion">
+                    <img src="../../src/img/empleados/panel-menu.svg" alt="Dashboard icon">
+                    Dashboard
+                </a>
+                <a href="clientes.html" class="elementoNavegacion">
+                    <img src="../../src/img/empleados/users-menu.svg" alt="Clientes icon">
+                    Clientes
+                </a>
+                <a href="inventario.html" class="elementoNavegacion active">
+                    <img src="../../src/img/empleados/active/package-active.svg" alt="Inventario icon">
+                    Inventario
+                </a>
+                <a href="sucursales.html" class="elementoNavegacion">
+                    <img src="../../src/img/empleados/building.svg" alt="Sucursales icon">
+                    Sucursales
+                </a>
+                <a href="facturacion.html" class="elementoNavegacion">
+                    <img src="../../src/img/empleados/scroll-text-menu.svg" alt="Facturación icon">
+                    Facturación
+                </a>
+
             </nav>
-        </div>
-    </header>
-
-    <main>
-        <!-- Sección de búsqueda y acciones relacionadas -->
-        <div class="search-container">
-            <div class="search-left">
-                <div class="search-bar">
-                    <img src="../../src/img/search (3).svg" alt="Buscar">
-                    <input type="text" placeholder="Buscar">
-                </div>
-                <button class="search-button">Buscar</button>
-            </div>
-            <div class="rigth">
-                <button class="add-button"><img src="../../src/img/layers.svg" alt="">Agregar Producto</button>
-            </div>
-        </div>
-        </div>
-
-        <!-- Sección que muestra los productos del inventario -->
-        <div class="productos">
-            <!-- Cada producto del inventario está contenido en un "producto" -->
-            <div class="producto">
-
-                <!-- Imagen del producto -->
-                <head>
-                    <img src="../../src/img/imagen.png" alt="">
-                </head>
-
-                <!-- Información general del producto -->
-                <div class="info-general">
-                    <div>
-                        <!-- Nombre y ID del producto -->
-                        <h3>Nombre Producto</h3>
-                        <p>ID: PROT-POWD-005</p>
-                    </div>
-                    <div>
-                        <!-- Icono de lista (posiblemente para ver más opciones del producto) -->
-                        <img src="../../src/img/list (1) 1.svg" alt="">
-                    </div>
-                </div>
-                
-                <!-- Datos adicionales del producto (stock y precio) -->
-                <div class="datos">
-                    <div>
-                        <!-- Icono de stock -->
-                        <img src="../../src/img/package (2).svg" alt="">
-                        <h4>Stock</h4>
-                        <h3>?</h3>
-                    </div>
-                    <div>
-                        <!-- Icono de precio -->
-                        <img src="../../src/img/dollar-sign.svg" alt="">
-                        <h4>Precio</h4>
-                        <h3>RD$ ?</h3>
-                    </div>
+            <div class="infoUsuario">
+                <div class="avatarUsuario">J</div>
+                <div class="detallesUsuario">
+                    <h4>José Miguel</h4>
+                    <p>josemiguel@ejemplo.com</p>
                 </div>
             </div>
+        </aside>
 
-            <!-- Sección de categorías del producto -->
-            <div class="objetivos">
-                <h3>Categorías:</h3>
-                <div class="row">
-                    <!-- Cada categoría del producto se muestra en un "objetivo" -->
-                    <div class="objetivo">
-                        <img src="../../src/img/circle 1.svg" alt="">Suplemento
-                    </div>
-                    <div class="objetivo">
-                        <img src="../../src/img/circle 1.svg" alt="">Proteína
-                    </div>
-                </div>
-
-                <!-- Información adicional sobre el producto -->
-                <div class="pie">
-                    <!-- Datos sobre la última venta del producto -->
-                    <div class="datos">
-                        <div class="imagen">
-                            <img src="../../src/img/calendar.svg" alt="">
-                        </div>
-                        <div class="dato">
-                            <h4>Última venta:</h4>
-                            <p>11/2/2024</p>
-                        </div>
-                    </div>
-
-                    <!-- Datos sobre la cantidad de productos vendidos -->
-                    <div class="dato">
-                        <div class="imagen">
-                            <img src="../../src/img/trophy.svg" alt="">
-                        </div>
-                        <div class="datos">
-                            <h4>Vendidos:</h4>
-                            <p>63</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="barraSuperior">
+            <div class="avatarUsuario">J</div>
         </div>
+
+        <main class="contenidoPrincipal">
+            <header class="encabezadoPanel">
+                <div>
+                    <h1>Inventario</h1>
+                    <p>Gestiona tus productos y existencias</p>
+                </div>
+            </header>
+
+            <div class="controlesInventario">
+                <div class="filtros">
+                    <div class="barraBusqueda">
+                        <img src="../../src/img/empleados/search.svg" alt="Search icon" class="iconoBusqueda">
+                        <input type="text" placeholder="Buscar productos...">
+                    </div>
+                    <button class="botonBuscar">Buscar</button>
+                </div>
+            
+
+
+            <div class="botonesAccion">
+                <button class="botonAjustarStock">
+                    <img src="../../src/img/empleados/package-setting.svg" alt="Settings icon">
+                    Ajustar stock
+                </button>
+                <button class="botonAgregarProducto">
+                    <img src="../../src/img/empleados/package-plus.svg" alt="Add icon">
+                    Agregar Producto
+                </button>
+            </div>
+    </div>
+
+    <div class="tabla">
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>NOMBRE</th>
+                    <th>CATEGORÍA</th>
+                    <th>STOCK</th>
+                    <th>PRECIO</th>
+                    <th>PROVEEDOR</th>
+                    <th>ESTADO</th>
+                    <th>ACCIÓN</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>PRO-001</td>
+                    <td>Proteína Whey 1kg</td>
+                    <td>Suplementos</td>
+                    <td>45</td>
+                    <td>RD$ 59.99</td>
+                    <td>Whey Protein</td>
+                    <td><span class="estado">Activo</span></td>
+                    <td>
+                        <button class="botonAcciones">
+                            <img src="../../src/img/empleados/ellipsis-vertical.svg" alt="Actions">
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
     </main>
+    </div>
 </body>
 
 </html>

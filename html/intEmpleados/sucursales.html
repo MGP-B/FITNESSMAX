@@ -1,119 +1,105 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sucursales</title>
+    <title>Sucursales - FitnessMax</title>
+    <link rel="stylesheet" href="../../src/css/empleado/global.css">
     <link rel="stylesheet" href="../../src/css/empleado/sucursales.css">
 </head>
 
 <body>
-    <!-- Contenedor del menú superior -->
-    <header>
-        <div class="menu">
-            <!-- Contenedor para organizar el logo y el menú de navegación -->
-            <div class="logo">
-                <img src="../../src/img/logo.png" alt="logo">
+    <div class="contenedor">
+        <aside class="barraLateral">
+            <div class="logotipo">
+                <img src="../../src/img/empleados/logo.png" alt="FitnessMax Logo">
+                <img src="../../src/img/empleados/flecha-izquierda.svg" alt="Toggle Sidebar" class="alternarBarraLateral">
             </div>
-            <nav id="opcionesMenu">
-                <ul>
-                    <!-- Menú Principal con enlaces a otras secciones -->
-                    <li><a href="clientes.html">Clientes</a></li>
-                    <li><a href="inventario.html">Inventario</a></li>
-                    <li><a href="entrenador.html">Entrenador</a></li>
-                    <li><a href="sucursales.html">Sucursales</a></li>
-                    <!-- Icono de usuario -->
-                    <img src="../../src/img/circle-user.svg" alt="Usuario">
-                </ul>
+            <nav class="menuNavegacion">
+                <a href="dashboard.html" class="elementoNavegacion">
+                    <img src="../../src/img/empleados/panel-menu.svg" alt="Dashboard icon">
+                    Dashboard
+                </a>
+                <a href="clientes.html" class="elementoNavegacion">
+                    <img src="../../src/img/empleados/users-menu.svg" alt="Clientes icon">
+                    Clientes
+                </a>
+                <a href="inventario.html" class="elementoNavegacion">
+                    <img src="../../src/img/empleados/package-menu.svg" alt="Inventario icon">
+                    Inventario
+                </a>
+                <a href="sucursales.html" class="elementoNavegacion active">
+                    <img src="../../src/img/empleados/active/building-active.svg" alt="Sucursales icon">
+                    Sucursales
+                </a>
+                <a href="facturacion.html" class="elementoNavegacion">
+                    <img src="../../src/img/empleados/scroll-text-menu.svg" alt="Facturación icon">
+                    Facturación
+                </a>
+
             </nav>
-        </div>
-    </header>
-
-    <!-- Cuerpo principal de la página -->
-    <main>
-        <div class="search-container">
-            <div class="search-left">
-                <div class="search-bar">
-                    <img src="../../src/img/search (3).svg" alt="Buscar">
-                    <input type="text" placeholder="Buscar">
+            <div class="infoUsuario">
+                <div class="avatarUsuario">J</div>
+                <div class="detallesUsuario">
+                    <h4>José Miguel</h4>
+                    <p>josemiguel@ejemplo.com</p>
                 </div>
-                <button class="search-button">Buscar</button>
             </div>
-            <div class="right">
-                <button class="add-button"><img src="../../src/img/layers.svg" alt="">Agregar Sucursal</button>
-            </div>
+        </aside>
+
+        <div class="barraSuperior">
+            <div class="avatarUsuario">J</div>
         </div>
 
-        <!-- Contenedor de productos o sucursales -->
-        <div class="productos">
-            <div class="productos">
-                <!-- Imagen del producto o sucursal -->
-                <head>
-                    <img src="../../src/img/imagen.png" alt="">
-                </head>
-
-                <!-- Información general de la sucursal o producto -->
-                <div class="info-general">
-                    <div>
-                        <!-- Nombre de la sucursal/producto y su dirección -->
-                        <h3>Nombre Producto</h3>
-                        <img src="../../src/img/map-pin (2).svg" alt="">
-                        <p>Calle Principal 123, Ciudad</p>
-                    </div>
-                    <div>
-                        <!-- Icono relacionado con más detalles, probablemente un enlace para ver más información -->
-                        <img src="../../src/img/list (1) 1.svg" alt="">
-                    </div>
+        <main class="contenidoPrincipal">
+            <div class="encabezadoPanel">
+                <div>
+                    <h1>Sucursales</h1>
+                    <p>Gestiona tus productos y existencias</p>
                 </div>
 
-                <!-- Sección de datos de la sucursal/producto -->
-                <div class="datos">
-                    <div>
-                        <!-- Icono de usuarios y la cantidad de miembros -->
-                        <img src="../../src/img/users (2).svg" alt="">
-                        <h4>Miembros</h4>
-                        <h3>?</h3>
-                    </div>
-                    <div>
-                        <!-- Icono de dinero y el precio de la sucursal/producto -->
-                        <img src="../../src/img/dollar-sign.svg" alt="">
-                        <h4>Precio</h4>
-                        <h3>RD$ ?</h3>
-                    </div>
-                </div>
             </div>
 
-            <!-- Detalles adicionales de la sucursal -->
-            <div class="objetivos">
-                <h3>Detalles:</h3>
-                <div class="pie">
-                    <div class="datos">
-                        <!-- Detalles adicionales, como teléfono, puntuación y horarios -->
-                        <div class="dato">
-                            <img src="../../src/img/phone (1).svg" alt="">
-                            <h4>+1 809-322-0983</h4>
-                        </div>
+            <div class="controlesSucursales">
 
-                        <div class="dato">
-                            <img src="../../src/img/star (1).svg" alt="">
-                            <h4>Puntuación: 4.5 / 5</h4>
-                        </div>
+                <div class="buscar">
+                    <div class="barraBusqueda">
+                        <img src="../../src/img/empleados/search.svg" alt="Search" class="iconoBusqueda">
+                        <input type="text" placeholder="Buscar productos...">
+                    </div>
+                    <button class="botonBuscar">Buscar</button>
+                </div>
 
-                        <div class="dato">
-                            <img src="../../src/img/timer.svg" alt="">
-                            <h4>Lun-Vie: 5am-11pm, Sab-Dom: 7am-9pm</h4>
-                        </div>
+                <button class="botonAgregarSucursal">
+                    <img src="../../src/img/empleados/building-2.svg" alt="Plus icon">
+                    Agregar Sucursal
+                </button>
 
-                        <div class="dato">
-                            <img src="../../src/img/square-user (1).svg" alt="">
-                            <h4>Responsable: Carlos Rodríguez</h4>
+            </div>
+
+            <div class="listaSucursales">
+                <div class="tarjetaSucursal">
+                    <div class="encabezadoSucursal">
+                        <h3>FitnessMax Central</h3>
+                        <div class="estadoConMenu">
+                            <span class="etiquetaEstado activo">Activo</span>
+                            <button class="botonMenu"><img src="../../src/img/empleados/ellipsis-vertical.svg"
+                                    alt="Menu"></button>
+                        </div>
+                    </div>
+                    <div class="detallesSucursal">
+                        <div class="gridDetalles">
+                            <p><img src="../../src/img/empleados/map-pin.svg" alt="Location"> Av. Principal #21, Santiago</p>
+                            <p><img src="../../src/img/empleados/users.svg" alt="Members"> 245 miembros activos</p>
+                            <p><img src="../../src/img/empleados/clock.svg" alt="Hours"> 6:00 AM - 10:00 PM</p>
+                            <p><img src="../../src/img/empleados/phone.svg" alt="Phone"> 809-555-0123</p>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </main>
+        </main>
+    </div>
 </body>
 
 </html>
