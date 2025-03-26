@@ -119,15 +119,14 @@
     font-size: 16px;
 }
 
-.modificar-perfil {
+.metodo-de-pago {
     flex: 1;
     max-height: 400px;
     max-width: 900px;
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-top: -50px;
-    overflow: auto;
+    margin-top: -40px;
     transform: scale(0.9,0.9);
 }
 
@@ -149,19 +148,13 @@ form table {
 
 form table tr th {
     font-size: 20px;
-    padding: 8px;
+    padding: 10px;
 }
 
 
 form table tr td label {
     text-align: left;
     font-weight: 600;
-}
-
-form table tr td label img {
-    height: 8%;
-    width: 100%;
-    cursor: pointer;
 }
 
 form table tr td input {
@@ -173,20 +166,14 @@ form table tr td input {
     width: 100%;
 }
 
-form table tr td #arrastrar-imagen {
-    font-size: 10px;
-    padding: 2px;
-    width: 100%;
-}
-
-.modificar-perfil .boton-container {
+.metodo-de-pago .boton-container {
     display: flex;
     justify-content: center; 
     align-items: center; 
     height: 50px; 
 }
 
-.modificar-perfil .boton-container #boton-guardar {
+.metodo-de-pago .boton-container #boton-guardar {
     background-color: #FFA500;
     border-radius: 20px;
     border: none;
@@ -198,6 +185,6 @@ form table tr td #arrastrar-imagen {
     transition: background-color 0.3s;
 }
 
-.modificar-perfil .boton-container #boton-guardar:hover {
+.metodo-de-pago .boton-container #boton-guardar:hover {
     background-color: #e99c0c;
 }

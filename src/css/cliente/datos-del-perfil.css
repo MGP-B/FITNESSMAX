@@ -119,9 +119,9 @@
     font-size: 16px;
 }
 
-.modificar-perfil {
+.datos-del-perfil {
     flex: 1;
-    max-height: 400px;
+    max-height: 600px;
     max-width: 900px;
     display: flex;
     align-items: center;
@@ -136,7 +136,7 @@ form {
     border: 1px solid #d9d9d9;
     border-radius: 20px;
     padding: 25px;
-    height: 30%;
+    height: 25%;
     width: 60%;
 }
 
@@ -149,7 +149,7 @@ form table {
 
 form table tr th {
     font-size: 20px;
-    padding: 8px;
+    padding: 5px;
 }
 
 
@@ -179,14 +179,14 @@ form table tr td #arrastrar-imagen {
     width: 100%;
 }
 
-.modificar-perfil .boton-container {
+.datos-del-perfil .boton-container {
     display: flex;
     justify-content: center; 
     align-items: center; 
     height: 50px; 
 }
 
-.modificar-perfil .boton-container #boton-guardar {
+.datos-del-perfil .boton-container #boton-guardar {
     background-color: #FFA500;
     border-radius: 20px;
     border: none;
@@ -198,6 +198,6 @@ form table tr td #arrastrar-imagen {
     transition: background-color 0.3s;
 }
 
-.modificar-perfil .boton-container #boton-guardar:hover {
+.datos-del-perfil .boton-container #boton-guardar:hover {
     background-color: #e99c0c;
 }
