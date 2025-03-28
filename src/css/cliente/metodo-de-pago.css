@@ -126,7 +126,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-top: -40px;
+    margin-top: -50px;
     transform: scale(0.9,0.9);
 }
 
@@ -134,7 +134,7 @@ form {
     background-color: #F0F0F0;
     border: 1px solid #d9d9d9;
     border-radius: 20px;
-    padding: 25px;
+    padding: 30px 40px;
     height: 30%;
     width: 60%;
 }
@@ -143,16 +143,18 @@ form table {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    margin-top: -11px;
+    line-height: 1.8;
 }
 
 form table tr th {
-    font-size: 20px;
-    padding: 10px;
+    font-size: 25px;
+    padding: 8px;
 }
 
 
 form table tr td label {
+    font-size: 16px;
     text-align: left;
     font-weight: 600;
 }
@@ -162,8 +164,8 @@ form table tr td input {
     border-radius: 10px;
     background-color: #d9d9d9;
     font-size: 15px;
-    padding: 2px;
-    width: 100%;
+    padding: 4px;
+    width: 230px;
 }
 
 .metodo-de-pago .boton-container {

@@ -127,7 +127,6 @@
     align-items: center;
     flex-direction: column;
     margin-top: -50px;
-    overflow: auto;
     transform: scale(0.9,0.9);
 }
 
@@ -145,6 +144,8 @@ form table {
     justify-content: center;
     align-items: center;
     width: 100%;
+    line-height: 1.8;
+    margin-top: -10px;
 }
 
 form table tr th {
@@ -156,6 +157,7 @@ form table tr th {
 form table tr td label {
     text-align: left;
     font-weight: 600;
+    font-size: 18px;
 }
 
 form table tr td label img {
@@ -169,7 +171,7 @@ form table tr td input {
     border-radius: 10px;
     background-color: #d9d9d9;
     font-size: 15px;
-    padding: 2px;
+    padding: 4px;
     width: 100%;
 }
 
