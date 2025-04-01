@@ -57,7 +57,7 @@ header p{
     padding: 0 24px;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: end;
     height: 45px;
     position: fixed;
     top: 0;
@@ -66,6 +66,10 @@ header p{
 
 
     z-index: 99;
+}
+
+.barraSuperior img {
+    display: none;
 }
 
 .barraLateral {
@@ -102,6 +106,9 @@ header p{
     display: flex;
     flex-direction: column;
     gap: 5px;
+    padding: 8px 0;
+    align-items: center;
+    justify-content: center;
 }
 
 .elementoNavegacion {
@@ -128,7 +135,7 @@ header p{
     color: #FF6C00;
 }
 
-.elementoNavegacion:hover:not(.active) {
+.elementoNavegacion:hover:no(.active) {
     background-color: rgb(216, 216, 216);
 }
 
@@ -143,8 +150,8 @@ header p{
 }
 
 .avatarUsuario {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     background-color: #ff6b35;
     color: white;
     border-radius: 50%;
@@ -276,6 +283,16 @@ td {
 @media (max-width: 400px) {
 
 
+    .barraSuperior img {
+        display: flex;
+        width: 130px;
+    }
+
+    .barraSuperior {
+        justify-content: space-between;
+        
+    }
+
     .barraLateral {
         width: 100%;
         height: 60px;
@@ -299,7 +316,7 @@ td {
         flex-direction: row;
         gap: 10px;
         width: 100%;
-        justify-content: space-evenly;
+        justify-content: space-;
     }
 
 
@@ -315,13 +332,13 @@ td {
         align-items: center;
     }
 
+
     .elementoNavegacion span {
         display: none;
     }
 
     .elementoNavegacion img {
-        width: 24px;
-        height: 24px;
+        width: 25px;
     }
 
     .infoUsuario {
@@ -339,8 +356,8 @@ td {
     }
 
     .barraSuperior .avatarUsuario {
-        width: 32px;
-        height: 32px;
+        width: 28px;
+        height: 28px;
     }
 
     .contenidoPrincipal {
