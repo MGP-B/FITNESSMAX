@@ -34,7 +34,7 @@
     display: flex;
     flex-direction: column;
     position: relative;
-    border: 1px solid #c7c7c7;
+    border: 1px solid #e4e4e4;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
@@ -50,7 +50,7 @@
     right: 28px;
     width: 54px;
     height: 54px;
-    background-color: #fff4f0;
+    background-color: #f3f3f3;
     border-radius: 12px;
     display: flex;
     align-items: center;
@@ -160,4 +160,14 @@
 
 @media (max-width: 400px) {
 
+    .iconoEstadistica img {
+        height: 20px;
+    }
+
+    .iconoEstadistica {
+        width: 40px;
+        height: 40px;
+        background-color: #f3f3f3;
+        transition: background-color 0.2s ease;
+    }
 }
