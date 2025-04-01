@@ -37,7 +37,7 @@
     max-width: 300px; 
     min-width: 200px;
     margin-right: 20px;
-    margin-top: -50px;
+    margin-top: -53px;
     transform: scale(0.9,0.9);
 }
 
@@ -68,6 +68,7 @@
 .perfil-container .nombre-membresia p {
     font-size: 15px;
     font-weight: 500;
+    padding-bottom: 15px;
 }
 
 .perfil-container .perfil-opciones {
@@ -111,92 +112,10 @@
 }
 
 .perfil-container .perfil-opciones ul li .otras-opciones li {
-    line-height: 2;
-    padding-left: 10px;
+    line-height: 1.5;
+    padding-left: 15px;
 }
 
 .perfil-container .perfil-opciones ul li .otras-opciones li a {
-    font-size: 16px;
-}
-
-.modificar-perfil {
-    flex: 1;
-    max-height: 400px;
-    max-width: 900px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin-top: -50px;
-    transform: scale(0.9,0.9);
-}
-
-form {
-    background-color: #F0F0F0;
-    border: 1px solid #d9d9d9;
-    border-radius: 20px;
-    padding: 25px;
-    height: 30%;
-    width: 60%;
-}
-
-form table {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-
-form table tr th {
-    font-size: 20px;
-    padding: 8px;
-}
-
-
-form table tr td label {
-    text-align: left;
-    font-weight: 600;
-}
-
-form table tr td label img {
-    height: 8%;
-    width: 100%;
-    cursor: pointer;
-}
-
-form table tr td input {
-    border: none;
-    border-radius: 10px;
-    background-color: #d9d9d9;
-    font-size: 15px;
-    padding: 2px;
-    width: 100%;
-}
-
-form table tr td #arrastrar-imagen {
-    font-size: 10px;
-    padding: 2px;
-    width: 100%;
-}
-
-.modificar-perfil .boton-container {
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-    height: 50px; 
-}
-
-.modificar-perfil .boton-container #boton-guardar {
-    background-color: #FFA500;
-    border-radius: 20px;
-    border: none;
-    font-size: 18px;
-    font-weight: 600;
-    margin-top: 20px;
-    padding: 10px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.modificar-perfil .boton-container #boton-guardar:hover {
-    background-color: #e99c0c;
+    font-size: 13px;
 }
