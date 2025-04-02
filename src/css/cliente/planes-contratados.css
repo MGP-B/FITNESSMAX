@@ -250,3 +250,156 @@
 .extras table tr td .boton-eliminar:hover {
     background-color: #e7433e;
 }
+
+@media screen and (max-width: 480px) {
+    .perfil-contenido {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .perfil-container {
+        width: 100%;
+        max-width: 350px;
+        margin: 0 auto;
+        transform: scale(1);
+    }
+
+    .perfil-container .icon-perfil2 {
+        justify-content: center;
+        margin-top: -50px;
+        max-width: 120px;
+        height: 120px;
+    }
+
+    .perfil-container .nombre-membresia h3 {
+        font-size: 18px;
+    }
+
+    .perfil-container .nombre-membresia p {
+        font-size: 14px;
+    }
+
+    .perfil-container .perfil-opciones {
+        width: 100%;
+        max-width: 320px;
+        text-align: center;
+    }
+
+    .perfil-container .perfil-opciones ul li {
+        text-align: center;
+        padding: 5px 0;
+    }
+
+    .planes-contratados {
+        width: 95%;
+        max-width: 360px;
+        margin-top: 10px;
+    }
+
+    .beneficios {
+        width: 100%;
+        padding: 15px;
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+    .boton-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    #boton-cancelar {
+        width: 90%;
+        max-width: 280px;
+        font-size: 16px;
+        height: 40px;
+    }
+
+    .extras {
+        width: 100%;
+        padding: 15px;
+        text-align: center;
+    }
+
+    .extras h2 {
+        font-size: 18px;
+    }
+
+    .extras table {
+        width: 100%;
+    }
+
+    .extras table tr {
+        display: block;
+        text-align: center;
+    }
+
+    .extras table tr td {
+        display: block;
+        padding: 5px;
+    }
+
+    .extras table tr td .boton-eliminar {
+        width: 90%;
+        max-width: 200px;
+        margin: 5px auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .perfil-contenido {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+
+    .perfil-container {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .planes-contratados {
+        width: 90%;
+        max-width: 450px;
+    }
+
+    .beneficios {
+        padding: 20px;
+        font-size: 15px;
+    }
+
+    .extras {
+        width: 90%;
+        padding: 20px;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .perfil-contenido {
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 20px;
+    }
+
+    .perfil-container {
+        max-width: 300px;
+        margin-right: 20px;
+    }
+
+    .planes-contratados {
+        max-width: 900px;
+    }
+
+    .beneficios {
+        padding: 35px;
+        font-size: 16px;
+    }
+
+    .extras {
+        width: 80%;
+        padding: 25px;
+    }
+}
