@@ -1,5 +1,5 @@
 @font-face {
-    font-family: Pytone;
+    font-family: Paytone;
     src: url(../../fuente/Paytone_One/PaytoneOne-Regular.ttf);
 }
 
@@ -274,7 +274,7 @@ header {
 /* Título del plan y span destacado */
 .plan h2 {
     color: white;
-    font-family: Pytone;
+    font-family: Paytone;
     font-size: 30px;
 }
 
