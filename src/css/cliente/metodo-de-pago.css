@@ -132,8 +132,6 @@
 }
 
 form {
-    background-color: #F0F0F0;
-    border: 1px solid #d9d9d9;
     border-radius: 20px;
     padding: 30px 40px;
     height: 30%;
@@ -165,8 +163,8 @@ form table tr td input {
     border-radius: 10px;
     background-color: #d9d9d9;
     font-size: 15px;
-    padding: 4px;
-    width: 230px;
+    padding: 8px;
+    width: 280px;
 }
 
 .metodo-de-pago .boton-container {
@@ -178,14 +176,15 @@ form table tr td input {
 
 .metodo-de-pago .boton-container #boton-guardar {
     background-color: #FFA500;
-    border-radius: 20px;
+    border-radius: 15px;
     border: none;
     font-size: 18px;
     font-weight: 600;
-    margin-top: 20px;
+    margin-top: 5px;
     padding: 10px;
     cursor: pointer;
     transition: background-color 0.3s;
+    width: 200px;
 }
 
 .metodo-de-pago .boton-container #boton-guardar:hover {

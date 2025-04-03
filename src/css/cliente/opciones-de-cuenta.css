@@ -127,13 +127,11 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-top: -50px;
+    margin-top: -100px;
     transform: scale(0.9,0.9);
 }
 
 form {
-    background-color: #F0F0F0;
-    border: 1px solid #d9d9d9;
     border-radius: 20px;
     padding: 30px 40px;
     height: 30%;
@@ -160,13 +158,25 @@ form table tr td label {
     font-weight: 600;
 }
 
+form table tr td label img {
+    height: 8%;
+    width: 100%;
+    cursor: pointer;
+}
+
 form table tr td input {
     border: none;
     border-radius: 10px;
     background-color: #d9d9d9;
     font-size: 15px;
-    padding: 4px;
-    width: 230px;
+    padding: 8px;
+    width: 280px;
+}
+
+form table tr td #arrastrar-imagen {
+    font-size: 10px;
+    padding: 2px;
+    width: 100%;
 }
 
 .opciones-de-cuenta .boton-container {
@@ -178,14 +188,15 @@ form table tr td input {
 
 .opciones-de-cuenta .boton-container #boton-guardar {
     background-color: #FFA500;
-    border-radius: 20px;
+    border-radius: 15px;
     border: none;
     font-size: 18px;
     font-weight: 600;
-    margin-top: 20px;
     padding: 10px;
+    margin-bottom: 30px;
     cursor: pointer;
     transition: background-color 0.3s;
+    width: 200px;
 }
 
 .opciones-de-cuenta .boton-container #boton-guardar:hover {

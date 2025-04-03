@@ -115,6 +115,7 @@
     margin-top: -50px;
     overflow: auto;
     transform: scale(0.9,0.9);
+    line-height: 0.4;
 }
 
 .nombre-foto {
@@ -124,7 +125,7 @@
     align-items: center;
     margin: 20px auto;
     height: 30%;
-    width: 80%;
+    width: 60%;
 }
 
 .nombre-foto img {
@@ -133,40 +134,46 @@
 }
 
 .nombre-foto h2 {
+    padding: 5px;
     font-size: 20px;
 }
 
 .informacion-entrenador {
-    background-color: #f0f0f0ad;
     line-height: 2;
     border-radius: 50px;
-    padding: 35px;
+    padding: 30px;
     height: 30%;
-    width: 80%;
+    width: 90%;
 }
 
 .informacion-entrenador h3 {
     font-size: 18px;
 }
 
+
 .informacion-entrenador .horarios {
-    background-color: #d9d9d92c;
-    border-radius: 25px;
+    background-color: #d9d9d9;
+    border-radius: 10px;
     margin: 5px 0;
-    padding: 20px;
-    width: 90%;
+    padding: 15px;
+    width: 100%;
+}
+
+.informacion-entrenador .horarios p {
+    font-size: 14px;
+    font-weight: 400;
 }
 
 .informacion-entrenador .correo {
-    background-color: #d9d9d92c;
-    border-radius: 25px;
+    background-color: #d9d9d9;
+    border-radius: 10px;
     padding-left: 20px;
     margin: 5px 0;
 }
 
 .informacion-entrenador .sobre-entrenador {
-    background-color: #d9d9d92c;
-    border-radius: 25px;
+    background-color: #d9d9d9;
+    border-radius: 10px;
     padding: 20px;
     text-align: left;
     line-height: 1.5;

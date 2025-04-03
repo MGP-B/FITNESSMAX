@@ -155,3 +155,20 @@
 .historial-pagos .pagos .rojo span {
     color: #FF0B02;
 }
+
+@media screen and (max-width: 800px) {
+
+    .historial-pagos .categorias h3 {
+        font-size: 18px;
+        padding: 13px;
+    }
+
+    .historial-pagos .pagos {
+        width: 98%;
+    }
+
+    .historial-pagos .pagos p {
+        font-size: 12px;
+        padding: 15px;
+    }
+}

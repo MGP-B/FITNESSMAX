@@ -64,7 +64,6 @@
                         <li><a href="historial-de-pagos.html">Ver historial de pagos</a></li>
                         <li><a href="modificar-perfil.html" id="selection">Modificar perfil</a>
                             <ul class="otras-opciones">
-                                <li><a href="/html/perfil/datos-del-perfil.html">Datos del perfil</a></li>
                                 <li><a href="/html/perfil/opciones-de-cuenta.html">Opciones de cuenta</a></li>
                                 <li><a href="/html/perfil/metodo-de-pago.html">Método de pago</a></li>
                             </ul>
@@ -81,28 +80,39 @@
                             <th>Cuenta</th>
                         </tr>
                         <tr>
-                            <td><label for="correo">Correo:</label></td>
+                            <td><label for="arrastrar-imagen">
+                                <img src="../../src/img/Group 21.png" alt="Arrastrar-Imagen">
+                            </label><input type="file" id="arrastrar-imagen" style="display: none;"></td>
                         </tr>
                         <tr>
-                            <td><input type="email" id="correo"></td>
+                            <td><label for="nombre">Nombre:</label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" id="nombre" placeholder="Modifica tu nombre de usuario"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="correo">E-mail:</label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="email" id="correo" placeholder="Cambia tu E-mail"></td>
                         </tr>
                         <tr>
                             <td><label for="telefono">Télefono:</label></td>
                         </tr>
                         <tr>
-                            <td><input type="tel" id="telefono" minlength="10" maxlength="10"></td>
+                            <td><input type="tel" id="telefono" minlength="10" maxlength="10" placeholder="Cambia tu número de télefono"></td>
                         </tr>
                         <tr>
                             <td><label for="nueva-contrasena">Nueva contraseña:</label></td>
                         </tr>
                         <tr>
-                            <td><input type="password" id="nueva-contrasena"></td>
+                            <td><input type="password" id="nueva-contrasena" placeholder="Cambia tu número de télefono"></td>
                         </tr>
                         <tr>
                             <td><label for="confirmar-contrasena">Confirmar contraseña:</label></td>
                         </tr>
                         <tr>
-                            <td><input type="password" id="confirmar-contrasena"></td>
+                            <td><input type="password" id="confirmar-contrasena" placeholder="Cambia tu número de télefono"></td>
                         </tr>
                     </table>
                 </form>
