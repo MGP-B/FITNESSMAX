@@ -256,28 +256,29 @@
         flex-direction: column;
         align-items: center;
         padding: 10px;
+        gap: 10px; 
     }
 
     .perfil-container {
         width: 100%;
         max-width: 350px;
-        margin: 0 auto;
-        transform: scale(1);
+        margin: 10px auto; 
     }
 
     .perfil-container .icon-perfil2 {
         justify-content: center;
-        margin-top: -50px;
+        position: relative;
+        top: -50px;
         max-width: 120px;
         height: 120px;
     }
 
     .perfil-container .nombre-membresia h3 {
-        font-size: 18px;
+        font-size: 1.125rem; 
     }
 
     .perfil-container .nombre-membresia p {
-        font-size: 14px;
+        font-size: 0.875rem; 
     }
 
     .perfil-container .perfil-opciones {
@@ -294,13 +295,17 @@
     .planes-contratados {
         width: 95%;
         max-width: 360px;
-        margin-top: 10px;
+        margin: 10px auto;
+    }
+
+    .planes-contratados h2 {
+        font-size: 1rem; 
     }
 
     .beneficios {
         width: 100%;
         padding: 15px;
-        font-size: 14px;
+        font-size: 0.875rem;
         line-height: 1.4;
     }
 
@@ -312,9 +317,9 @@
     }
 
     #boton-cancelar {
-        width: 90%;
+        width: 60%;
         max-width: 280px;
-        font-size: 16px;
+        font-size: 1rem;
         height: 40px;
     }
 
@@ -325,25 +330,34 @@
     }
 
     .extras h2 {
-        font-size: 18px;
+        font-size: 1.125rem;
     }
 
     .extras table {
         width: 100%;
+        border-collapse: collapse;
+    }
+
+    .extras table thead {
+        display: table-header-group;
+    }
+
+    .extras table tbody {
+        display: table-row-group;
     }
 
     .extras table tr {
-        display: block;
+        display: table-row;
         text-align: center;
     }
 
-    .extras table tr td {
-        display: block;
+    .extras table td {
+        display: table-cell;
         padding: 5px;
     }
 
-    .extras table tr td .boton-eliminar {
-        width: 90%;
+    .extras table td .boton-eliminar {
+        width: 50%;
         max-width: 200px;
         margin: 5px auto;
     }
@@ -354,6 +368,7 @@
         flex-direction: column;
         align-items: center;
         padding: 15px;
+        gap: 15px;
     }
 
     .perfil-container {
@@ -368,7 +383,7 @@
 
     .beneficios {
         padding: 20px;
-        font-size: 15px;
+        font-size: 1rem;
     }
 
     .extras {
@@ -382,11 +397,11 @@
         flex-direction: row;
         align-items: flex-start;
         padding: 20px;
+        gap: 20px;
     }
 
     .perfil-container {
         max-width: 300px;
-        margin-right: 20px;
     }
 
     .planes-contratados {
@@ -395,7 +410,7 @@
 
     .beneficios {
         padding: 35px;
-        font-size: 16px;
+        font-size: 1rem;
     }
 
     .extras {

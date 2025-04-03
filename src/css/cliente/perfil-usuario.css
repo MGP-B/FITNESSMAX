@@ -101,28 +101,75 @@
     color: #FFA500;
 }
 
-@media screen and (max-width: 460px) {
-    .perfil-container {
-        max-width: 100%;
+@media screen and (max-width: 480px) {
+    .perfil-contenido {
+        flex-direction: column;
+        align-items: center;
         padding: 10px;
+        gap: 10px; 
     }
 
-    .banner {
-        height: 90px;
-        width: 50px;
+    .perfil-container {
+        width: 100%;
+        max-width: 350px;
+        margin: 10px auto; 
     }
 
-    .icon-perfil2 {
-        width: 80px;
-        height: 80px;
+    .perfil-container .icon-perfil2 {
+        justify-content: center;
+        position: relative;
+        top: -50px;
+        max-width: 120px;
+        height: 120px;
     }
 
-    .perfil-opciones {
-        width: 95%;
+    .perfil-container .nombre-membresia h3 {
+        font-size: 1.125rem; 
     }
 
-    .perfil-opciones ul li a {
-        font-size: 14px;
-        padding: 8px;
+    .perfil-container .nombre-membresia p {
+        font-size: 0.875rem; 
+    }
+
+    .perfil-container .perfil-opciones {
+        width: 100%;
+        max-width: 320px;
+        text-align: center;
+    }
+
+    .perfil-container .perfil-opciones ul li {
+        text-align: center;
+        padding: 5px 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .perfil-contenido {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+        gap: 15px;
+    }
+
+    .perfil-container {
+        width: 100%;
+        max-width: 400px;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .perfil-contenido {
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .perfil-container {
+        max-width: 300px;
+    }
+
+    .planes-contratados {
+        max-width: 900px;
     }
 }
