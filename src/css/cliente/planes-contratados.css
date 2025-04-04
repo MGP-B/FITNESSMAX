@@ -338,13 +338,13 @@
         border-collapse: collapse;
     }
 
-    .extras table thead {
+    /* .extras table thead {
         display: table-header-group;
     }
 
     .extras table tbody {
         display: table-row-group;
-    }
+    } */
 
     .extras table tr {
         display: table-row;
