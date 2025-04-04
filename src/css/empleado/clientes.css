@@ -232,3 +232,38 @@
     width: 16px;
     height: 16px;
 }
+
+@media (max-width: 400px) {
+    .filtrosClientes {
+        width: 100%;
+    }
+
+    .barraBusqueda {
+        width: 100%;
+    }
+
+    .barraBusqueda input {
+        width: 100%;
+    }
+
+    .botonAgregarCliente {
+        width: 40px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .botonAgregarCliente {
+        width: 35px;
+        height: 35px;
+    }
+
+    .botonAgregarCliente img {
+        translate: 2px;
+        
+    }
+
+    .botonAgregarCliente span {
+        display: none;
+    }
+}

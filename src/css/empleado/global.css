@@ -53,7 +53,6 @@ header p{
 .barraSuperior {
     background-color: white;
     border: 1px solid #adadad;
-
     padding: 0 24px;
     display: flex;
     align-items: center;
@@ -93,6 +92,10 @@ header p{
 
 .logotipo img {
     max-width: 150px;
+}
+
+.logotipo .logoTablet {
+    display: none;
 }
 
 .alternarBarraLateral {
@@ -277,7 +280,100 @@ td {
 
 /* RESPONSIVE */
 
-/* 760 - 900 */
+/* 760 - 900 TABLET */
+@media (max-width: 900px) {
+
+    .barraLateral {
+        align-items: center;
+        padding: 0 5px;
+
+    }
+
+
+    .menuNavegacion {
+        display: flex;
+        justify-content: start;
+        text-align: center;
+        align-items: start;
+
+    }
+
+    .logotipo img {
+            display: none;
+        }
+    
+        .logotipo .logoTablet {
+            display: flex;
+            width: 40px;
+            translate: -4px;
+        }
+
+        .menuNavegacion span {
+            display: none;
+            text-align: start;
+        }
+
+        .elementoNavegacion {
+            display: flex;
+            width: auto;
+
+        }
+
+        .elementoNavegacion{
+            height: 43px;
+        }
+
+        .barraLateral {
+            width: auto;
+        }
+
+        .detallesUsuario {
+            display: none;
+        }
+
+        .infoUsuario {
+            background-color: transparent;
+            translate: 4px;
+        }
+
+        .barraSuperior {
+            left: 0;
+        }
+
+        .contenidoPrincipal {
+            margin-left: 58px;
+            width: calc(100% - 60px);
+
+        }
+
+        .tabla {
+            height: 54vh;
+            overflow: auto;
+        }
+
+        table {
+            width: 100%;
+            font-size: 12px;
+        }
+
+        th,
+        td {
+            padding: 10px 12px;
+        }
+
+        th {
+            font-size: 12px;
+        }
+
+        td {
+            font-size: 12px;
+        }
+
+        tr:hover {
+            background-color: #ffe0d0;
+        }
+    
+}
 
 /* TELEFONOS */
 @media (max-width: 400px) {
@@ -316,7 +412,7 @@ td {
         flex-direction: row;
         gap: 10px;
         width: 100%;
-        justify-content: space-;
+        justify-content: space-evenly;
     }
 
 

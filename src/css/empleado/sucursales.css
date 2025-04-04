@@ -188,3 +188,63 @@
     width: 16px;
     height: 16px;
 }
+
+@media (max-width: 400px) {
+
+    .tarjetaSucursal {
+        width: 100%;
+        padding: 16px;
+    }
+
+    .encabezadoSucursal h3 {
+        font-size: 16px;
+    }
+
+    .gridDetalles {
+        grid-template-columns: 1fr;
+    }
+
+
+    .botonAgregarSucursal {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+
+    .tarjetaSucursal {
+        padding: 16px;
+    }
+
+    .detallesSucursal img {
+        width: 14px;
+        height: 14px;
+    }
+    
+
+    .filtrosClientes {
+        width: 100%;
+    }
+
+    .barraBusqueda {
+        width: 100%;
+    }
+
+    .barraBusqueda input {
+        width: 100%;
+    }
+
+    .botonAgregarSucursal {
+        width: 40px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .botonAgregarSucursal span {
+        display: none;
+    }
+
+    .botonAgregarSucursal {
+        width: 35px;
+        height: 35px;
+    }
+}

@@ -75,3 +75,37 @@
     width: 22px;
     height: 22px;
 }
+
+@media (max-width: 400px) {
+    .filtrosClientes {
+        width: 100%;
+    }
+
+    .barraBusqueda {
+        width: 100%;
+    }
+
+    .barraBusqueda input {
+        width: 100%;
+    }
+
+    .botonCrearFactura {
+        width: 40px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .botonCrearFactura img {
+        translate: 2px;
+    }
+
+    .botonCrearFactura span {
+        display: none;
+    }
+
+    .botonCrearFactura {
+        width: 35px;
+        height: 35px;
+    }   
+}

@@ -158,3 +158,37 @@
     width: 20px;
     height: 20px;
 }
+
+@media (max-width: 400px) {
+    .filtrosClientes {
+        width: 100%;
+    }
+
+    .barraBusqueda {
+        width: 100%;
+    }
+
+    .barraBusqueda input {
+        width: 100%;
+    }
+
+    .botonAgregarProducto, .botonAjustarStock {
+        width: 40px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .botonAgregarProducto img, .botonAjustarStock img {
+        translate: 2px;
+    }
+
+    .botonAgregarProducto span, .botonAjustarStock span {
+        display: none;
+    }
+
+    .botonAgregarProducto, .botonAjustarStock {
+        width: 35px;
+        height: 35px;
+    }
+}
