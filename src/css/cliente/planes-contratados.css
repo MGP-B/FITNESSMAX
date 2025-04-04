@@ -256,119 +256,30 @@
         flex-direction: column;
         align-items: center;
         padding: 10px;
-        gap: 10px; 
+        gap: 10px;
+        margin-top: -40px;
     }
 
     .perfil-container {
-        width: 100%;
+        width: 70%;
         max-width: 350px;
-        margin: 10px auto; 
-    }
-
-    .perfil-container .icon-perfil2 {
-        justify-content: center;
-        position: relative;
-        top: -50px;
-        max-width: 120px;
-        height: 120px;
-    }
-
-    .perfil-container .nombre-membresia h3 {
-        font-size: 1.125rem; 
-    }
-
-    .perfil-container .nombre-membresia p {
-        font-size: 0.875rem; 
-    }
-
-    .perfil-container .perfil-opciones {
-        width: 100%;
-        max-width: 320px;
-        text-align: center;
-    }
-
-    .perfil-container .perfil-opciones ul li {
-        text-align: center;
-        padding: 5px 0;
+        margin: 20px auto; 
     }
 
     .planes-contratados {
-        width: 95%;
-        max-width: 360px;
-        margin: 10px auto;
-    }
-
-    .planes-contratados h2 {
-        font-size: 1rem; 
-    }
-
-    .beneficios {
-        width: 100%;
-        padding: 15px;
-        font-size: 0.875rem;
-        line-height: 1.4;
-    }
-
-    .boton-container {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        margin-top: 10px;
-    }
-
-    #boton-cancelar {
-        width: 60%;
-        max-width: 280px;
-        font-size: 1rem;
-        height: 40px;
-    }
-
-    .extras {
-        width: 100%;
-        padding: 15px;
-        text-align: center;
-    }
-
-    .extras h2 {
-        font-size: 1.125rem;
-    }
-
-    .extras table {
-        width: 100%;
-        border-collapse: collapse;
-    }
-
-    /* .extras table thead {
-        display: table-header-group;
-    }
-
-    .extras table tbody {
-        display: table-row-group;
-    } */
-
-    .extras table tr {
-        display: table-row;
-        text-align: center;
-    }
-
-    .extras table td {
-        display: table-cell;
-        padding: 5px;
-    }
-
-    .extras table td .boton-eliminar {
-        width: 50%;
-        max-width: 200px;
-        margin: 5px auto;
+        transform: scale(0.8, 0.8);
     }
 }
 
 @media screen and (max-width: 768px) {
+    .banner {
+        transform: scale(0.9, 0.9);
+    }
+
     .perfil-contenido {
-        flex-direction: column;
-        align-items: center;
         padding: 15px;
         gap: 15px;
+        transform: scale(0.9, 0.9);
     }
 
     .perfil-container {
@@ -398,8 +309,6 @@
 
 @media screen and (min-width: 769px) {
     .perfil-contenido {
-        flex-direction: row;
-        align-items: flex-start;
         padding: 20px;
         gap: 20px;
     }
